@@ -1,0 +1,124 @@
+* {
+	padding:0px;
+	margin:0px;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: rgb(59,61,69);
+}
+
+header{
+	background-color: rgb(74,79,86);
+	width:100%;
+	min-height:126px; 
+	text-align:center;
+	color:rgb(235,126,127);
+}
+
+
+header h1{
+	padding-top: 20px;
+}
+
+header p{
+	margin-top: 10px;
+	font-size:21px;
+}
+
+main{
+	width: 50%;
+	min-height: 356px;
+	background-color: white;
+	margin:40px auto;
+	position: relative;
+}
+
+main ul{
+	list-style-type:none;
+}
+
+main li{
+	position: relative;
+	font-size:30px;
+	color:rgb(249,249,249);
+	padding-top:25px;
+	width:769px;
+	right:30px;
+	top:7px;	
+}
+
+main div{
+	position:relative;
+	bottom:14px;
+	left:20px;
+}
+
+main label span.second-sent{
+	position: relative;
+	font-size:17px;
+	color:lightgrey;
+	bottom:3px;
+}
+
+li:nth-child(even){
+	background-color: rgb(122,117,147);
+}
+
+li:nth-child(odd){
+	background-color: rgb(136,131,158);
+
+}
+
+li:hover{
+	background-color: rgb(98,94,119);
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+
+span.first-sent{
+		padding-right:10px;
+}
+
+input:checked + span span.first-sent{
+	text-decoration: line-through;
+	color:rgb(136,131,158);
+}
+
+input:checked + span span.second-sent{
+	text-decoration: line-through;
+	color:rgb(136,131,158);
+}
+
+main form{
+	position: absolute;
+	top:-7px;
+	left:30px;
+}
+
+
+
+label{
+	margin-left:12px;
+}
+
+
+input{
+  transform:scale(2.5);
+  opacity:0.9;
+}
+
+footer{
+	width: 50%;
+	min-height: 70px;
+	background-color: rgb(74,79,86);
+	margin:50px auto;
+	text-align:center;
+	color:rgb(235,126,127);
+	font-size:25px;
+}
+
+footer p{
+	padding-top: 20px;
+}
