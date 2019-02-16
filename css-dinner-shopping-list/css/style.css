@@ -32,6 +32,7 @@ main{
 	background-color: white;
 	margin:40px auto;
 	position: relative;
+	cursor: pointer;
 }
 
 main ul{
@@ -78,7 +79,7 @@ li:hover{
 
 
 span.first-sent{
-		padding-right:10px;
+	padding-right:10px;
 }
 
 input:checked + span span.first-sent{
@@ -97,16 +98,17 @@ main form{
 	left:30px;
 }
 
-
-
 label{
 	margin-left:12px;
+	cursor: pointer;
 }
 
 
 input{
-  transform:scale(2.5);
-  opacity:0.9;
+	transform:scale(2.5);
+	opacity:0.9;
+	cursor: pointer;
+
 }
 
 footer{
