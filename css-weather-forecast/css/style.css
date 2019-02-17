@@ -1,0 +1,165 @@
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding: 0;
+	margin:0;
+	font-size: 100%;
+	transition: all .1s ease-in;
+}
+
+html, body {
+	height: 100%; 
+	font-family: sans-serif;
+	color:white;
+}
+
+body{
+	border:17px solid rgb(43,129,172);
+	background-color: rgb(51,153,204);
+}
+
+.forecast__header{
+	width:63%;
+	margin: auto;
+	min-height:4rem;
+	margin-top:.5rem;
+}
+
+.forecast__header_logo{
+	font-size: 1.6rem;
+	padding-top: 1.6rem;
+	display:inline-block;
+	margin-right:1rem;
+}
+
+.wi {
+	font-size: 1.7rem;
+}
+
+.forecast__list{
+	width: 63%;
+	margin: auto;
+	font-size: 0;
+	margin-top:2rem;
+	border:2px solid white;
+	background-color: white;
+}
+
+.forecast__list_item{
+	list-style:none;
+	display:inline-block;
+	/*width:33%;*/
+	border:2px solid white;
+}
+
+
+.forecast__list_item:nth-child(1){
+	width: 50%;
+	background-color:rgb(51,153,204);
+
+}
+
+.forecast__list_item:nth-child(2){
+	width: 25%;
+	background-color:rgb(51,204,204);
+	
+}
+
+.forecast__list_item:nth-child(3){
+	width: 25%;
+	background-color:rgb(153,102,153);
+
+}
+
+.forecast__list_item:nth-child(4){
+	width: 25%;
+	background-color:rgb(194,71,71);
+	
+	
+}
+
+.forecast__list_item:nth-child(5){
+	width: 25%;
+	background-color:rgb(226,103,74);
+	
+	
+}
+
+.forecast__list_item:nth-child(6){
+	width: 25%;
+	background-color:rgb(255,204,102);
+	
+	
+}
+
+.forecast__list_item:nth-child(7){
+	width: 25%;
+	background-color:rgb(153,204,153);
+	
+	
+}
+.forecast__list_item:nth-child(8){
+	width: 25%;
+	background-color:rgb(102,153,153);
+	
+	
+}
+.forecast__list_item:nth-child(9){
+	width: 50%;
+	background-color:rgb(204,102,153);
+	
+	
+}
+.forecast__list_item:nth-child(10){
+	width: 25%;
+	background-color:rgb(51,153,102);
+	
+	
+}
+.forecast__list_item:nth-child(11){
+	width: 100%;
+	background-color:rgb(102,102,153);	
+}
+
+.forecast__list:hover .forecast__list_item{
+	opacity: .5;
+}
+
+.forecast__list .forecast__list_item:hover{
+	opacity: 1;
+}
+
+.forecast__list_item_link{
+	width: 100%;
+	display:inline-block;
+	font-size: 1.4rem;
+	text-decoration: none;
+}
+
+.forecast__list_item_link_city{
+	margin-top:1.8rem;
+	margin-bottom:1.8rem;
+	text-align: center;
+	color:white;
+}
+
+.forecast__list_item_link_city_deg{
+	display: inline-block;
+	margin-top: .8rem;
+	opacity: 0.6;
+}
+
+.forecast__list_item_link_city_deg i{
+	margin-left: .5rem;
+	font-size: 1.7rem;
+}
+
+.sent{
+	width:63%;
+	margin: auto;
+	font-size: 1.3rem;
+	color:white;
+	opacity: 0.8;
+	margin-top: 1.5rem;
+}
