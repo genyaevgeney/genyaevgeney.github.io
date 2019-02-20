@@ -22,14 +22,14 @@ html, body {
 .search__header {
 	width:100%;
 	min-height: 9rem;
-	padding-top: 3rem;
+	/* padding-top: 3rem; */
 
 }
 
 .search__header_form {
 
 	width:80%;
-	height: 6rem;
+	height: 10rem;
 	margin:auto;
 	font-size: 0;
 	position: relative;
@@ -37,23 +37,22 @@ html, body {
 
 .search__header_form [type]{
 	display:inline-block;
-	font-size: 5.7rem;
+	font-size: 7rem;
 	vertical-align: middle;
 	border:none;
 	height: 80%;	
 }
 
 .search__header_form input{
-	width:92.7%; 
+	width:88%; 
 	color:#ec5a62;
 	font-weight: bold;
 	background-color: rgb(241,241,241);
 	outline:none;
-	height: 6rem;
 	position: absolute;
 	left: 0;
 	bottom: 0;
-}
+	}
 
 .search__header_form input::placeholder{
 	color:#c2c2c2; 
@@ -63,7 +62,7 @@ html, body {
 
 
 .search__header_form button{
-	width: 4.8rem;
+	width: 8rem;
 	background: transparent url(../img/magnifier.svg) no-repeat center center;	
 	right: 0;
 	bottom: 0;
@@ -72,9 +71,8 @@ html, body {
 }
 
 .search__header_form button:hover{
-	width:5.4rem;
+	width:9rem;
 	height: 90%;
-	max-height: 8rem;
 	bottom:0;
 	right: 0;
 	cursor: pointer;
