@@ -22,36 +22,32 @@ html, body {
 .search__header {
 	width:100%;
 	min-height: 9rem;
-	/* padding-top: 3rem; */
+	padding-top: 3rem; 
 
 }
 
 .search__header_form {
-
-	width:80%;
+	width:68rem;
 	height: 10rem;
 	margin:auto;
 	font-size: 0;
-	position: relative;
 }
 
 .search__header_form [type]{
 	display:inline-block;
 	font-size: 7rem;
-	vertical-align: middle;
+	height: 10rem;
+	vertical-align: top;
 	border:none;
-	height: 80%;	
 }
 
 .search__header_form input{
-	width:88%; 
+	width:58rem; 
 	color:#ec5a62;
 	font-weight: bold;
 	background-color: rgb(241,241,241);
 	outline:none;
-	position: absolute;
-	left: 0;
-	bottom: 0;
+	float: left;
 	}
 
 .search__header_form input::placeholder{
@@ -62,40 +58,32 @@ html, body {
 
 
 .search__header_form button{
-	width: 8rem;
+	width: 10rem;
 	background: transparent url(../img/magnifier.svg) no-repeat center center;	
-	right: 0;
-	bottom: 0;
-	position: absolute;
 	transition: all .2s ease-in;
+	float:right;
+	background-size: 80%;
 }
 
 .search__header_form button:hover{
-	width:9rem;
-	height: 90%;
-	bottom:0;
-	right: 0;
+	background-size:93%;
 	cursor: pointer;
 }
 
 
 
 .search__main {
-	width: 100%;
+	width: 68rem;
 	margin:auto;
 	font-size: 0;
 	color:#c2c2c2;
+	margin-top:4%;
 }
 
-.container {
-	width:80%;
-	margin:auto;
 
-}
 
 .search__main_col {
 	display: inline-block;
-	margin-top:4%;
 	width:29%;
 	margin-right:6.5%;
 	font-size:1rem;
@@ -120,22 +108,23 @@ html, body {
 
 .search__main_col_list img {
 	display: inline-block;
-	position:relative;
-	top:.13rem;
+	vertical-align: middle;
+	margin-left: .9rem;
 }
 
 .search__main_col:nth-child(1) img {
 	border-radius: 50%;
+
 }
 
 .search__main_col_list_item_link {
 	text-decoration: none;
 	display:block;
-	position: relative;
-	padding: .4rem;
 	background-color: rgba(118,117,128,0.05);
 	color:#c2c2c2;
 	border-radius: 8px;
+	line-height: 3rem;
+	padding: .3rem 0;
 }
 
 .search__main_col_list_item_link:hover{
@@ -143,12 +132,15 @@ html, body {
 	background-color: rgba(118,117,128,0.1);
 }
 
+.search__main_col_list_item_link_content {
+	 display: inline-block;
+  vertical-align: middle;
+}
+
 .search__main_col_list_item_link span {
-	display: inline-block;
-	position:relative;
-	bottom:1rem;
-	left:1rem;
 	font-size: .9rem;
 	font-weight: bold;
-
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: .8rem;
 }
