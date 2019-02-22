@@ -15,7 +15,7 @@ html, body {
 }
 
 .page {
-	max-width: 1600px;
+	max-width: 80%;
 	margin: auto;
 }
 
@@ -62,15 +62,18 @@ html, body {
 	background: transparent url(../img/magnifier.svg) no-repeat center center;	
 	transition: all .2s ease-in;
 	float:right;
-	background-size: 80%;
+	background-size: 55%;
 }
 
 .search__header_form button:hover{
-	background-size:93%;
+	background-size:65%;
 	cursor: pointer;
 }
 
 
+.main_section {
+	width: 100%;
+}
 
 .search__main {
 	width: 68rem;
@@ -109,7 +112,6 @@ html, body {
 .search__main_col_list img {
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: .9rem;
 }
 
 .search__main_col:nth-child(1) img {
@@ -125,6 +127,7 @@ html, body {
 	border-radius: 8px;
 	line-height: 3rem;
 	padding: .3rem 0;
+	padding-left: .9rem;
 }
 
 .search__main_col_list_item_link:hover{
