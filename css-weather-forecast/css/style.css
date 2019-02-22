@@ -21,12 +21,13 @@ body{
 }
 
 .content {
-	max-width: 1600px;
+	max-width: 1008px;
 	margin: auto;
+	width: 100%;
 }
 
 .forecast__header{
-	width:63%;
+	width:100%;
 	margin: auto;
 	min-height:4rem;
 	margin-top:.5rem;
@@ -44,7 +45,7 @@ body{
 }
 
 .forecast__list{
-	width: 63%;
+	width: 100%;
 	margin: auto;
 	font-size: 0;
 	margin-top:2rem;
@@ -208,7 +209,7 @@ body{
 }
 
 .sent{
-	width:63%;
+	width:100%;
 	margin: auto;
 	font-size: 1.3rem;
 	color:white;

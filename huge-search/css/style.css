@@ -15,8 +15,9 @@ html, body {
 }
 
 .page {
-	max-width: 80%;
+	max-width: 1140px;
 	margin: auto;
+	width: 100%;
 }
 
 .search__header {
@@ -27,8 +28,7 @@ html, body {
 }
 
 .search__header_form {
-	width:68rem;
-	height: 10rem;
+	width:100%;
 	margin:auto;
 	font-size: 0;
 }
@@ -36,18 +36,17 @@ html, body {
 .search__header_form [type]{
 	display:inline-block;
 	font-size: 7rem;
-	height: 10rem;
+	height: 171px;
 	vertical-align: top;
 	border:none;
 }
 
 .search__header_form input{
-	width:58rem; 
+	width:85%; 
 	color:#ec5a62;
 	font-weight: bold;
 	background-color: rgb(241,241,241);
 	outline:none;
-	float: left;
 	}
 
 .search__header_form input::placeholder{
@@ -58,11 +57,11 @@ html, body {
 
 
 .search__header_form button{
-	width: 10rem;
+	width: 15%;
 	background: transparent url(../img/magnifier.svg) no-repeat center center;	
 	transition: all .2s ease-in;
-	float:right;
 	background-size: 55%;
+
 }
 
 .search__header_form button:hover{
@@ -71,12 +70,8 @@ html, body {
 }
 
 
-.main_section {
-	width: 100%;
-}
-
 .search__main {
-	width: 68rem;
+	width: 100%;
 	margin:auto;
 	font-size: 0;
 	color:#c2c2c2;
