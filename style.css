@@ -38,6 +38,8 @@ html,body {
 	margin:auto;
 	height: 28rem;
 	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .portfolio__list_item, .portfolio__list_item_link {
