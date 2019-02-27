@@ -1,0 +1,57 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    min-height: 100vh;
+}
+
+body
+{
+    font-size: 100%;
+
+    background-color: lightcyan;
+}
+
+.board
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+
+    border: 1.5rem solid brown; 
+    background-color: yellow;
+}
+.board__odd-row .row__cell:nth-child(even)
+{
+    background-color: black;
+}
+.board__odd-row .row__cell:nth-child(odd)
+{
+    background-color: white;
+}
+.board__even-row .row__cell:nth-child(even)
+{
+    background-color: white;
+}
+.board__even-row .row__cell:nth-child(odd)
+{
+    background-color: black;
+}
+.board .row__cell
+{
+    float: left; 
+
+    width: 3.75rem;
+    height: 3.75rem;
+}
