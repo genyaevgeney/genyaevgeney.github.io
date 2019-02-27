@@ -23,14 +23,14 @@ body {
 	width: 100%;
 	margin: auto;
 	// background-color: yellow;
-	height: 70vh;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 3.5rem;
-	line-height: 1.6875rem;	
+	align-items: center;
+	padding-top: 2.8125rem;
+	// background-color: yellow;
 	letter-spacing: 0.025rem;
 
 	a {
@@ -50,8 +50,6 @@ body {
 	}
 
 	&__nav {
-
-		margin-top:0.25rem;
 
 		.nav__list {
 
@@ -79,14 +77,17 @@ body {
 
 .main {
 	display: flex;
-	padding-top:6.4375rem;
-	position: relative;
+	padding-top:5.5rem;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
 
-
-	&__section-1 {
-		width: 39.4375rem;
+	.sections {
+		display: flex;
+		.section-1 {
+			width: 50%;
 		// background-color: cyan;
-		word-wrap: break-word;
+
 
 		.section-1__h1 {
 			font-family: 'Raleway',sans-serif;
@@ -110,16 +111,15 @@ body {
 			font-size: 1.5rem;
 			line-height: 2.25rem;
 			letter-spacing: 0.025rem;
-			margin-top: 1.6875rem;
-			margin-left: 2.6875rem;
+			margin-top: 1.8125rem;
+			margin-left: 2.625rem;
+			margin-bottom: 0.9375rem;
 
 			span:first-child {
-				display: block;
-				margin-left: 1.625rem;
+				margin-left: 1.5625rem;
 			}
 			span:last-child {
-				display: block;
-				margin-left: 3.375rem;
+				margin-left: 3.25rem;
 			}
 
 		}
@@ -127,15 +127,13 @@ body {
 		.section-1__link {
 			text-decoration: none;
 			text-transform: capitalize;
-			display: inline-block;
 			font-family: 'Roboto',sans-serif;
 			font-weight: 700;
 			font-size: 1.5rem;
 			line-height: 2.25rem;
 			letter-spacing: 0.025rem;
 			color:#e10011;
-			margin-top: 0.875rem;
-			margin-left: 29.125rem;	
+			margin-left: 29.0625rem;	
 
 			&:hover {
 				opacity: 0.5;
@@ -145,37 +143,78 @@ body {
 
 	}
 
-	&__section-2 {
-		margin-left: 5.9375rem;
+	.section-2 {
+		width: 50%;
+
+		img {
+			display: block;
+			margin:auto;
+		}
+		// margin-left: 7.3125rem;
 	}
 
-	&__slider-nav {
+}
 
-		.nav__list {
-			list-style: none;
-			display: flex;
-			position:absolute;
-			top:41.8125rem;
-			right:36.125rem;
+&__slider-nav {
 
-			.list__item {
-				margin-left: 10px;
-			}
 
-			.list__item:first-child {
-				margin-left: 0;
-			}
+	margin-top: 4.8125rem;
+	.nav__list {
+		list-style: none;
+		display: inline-flex;	
 
+		.list__item {
+			margin-left: 10px;
+		}
+
+		.list__item:first-child {
+			margin-left: 0;
 		}
 
 	}
+
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .info {
 	background-color: #ffffff;
-	margin-top:11.875rem;
-	height:75.3125rem;
-	margin-bottom: 3.75rem;
+	margin-top:6.25rem;
+	padding-bottom:5rem;
+	padding-top:6.625rem;
+	border-radius: 0.5625rem;
+	margin-bottom: 3rem;
 
 	&__section-1 {
 		display: flex;
@@ -188,12 +227,15 @@ body {
 			text-transform: capitalize;
 			font-size:3rem;
 			letter-spacing: 0.025rem;
-			margin-top: 6.625rem;
+			// margin-top: 6.625rem;
 
 		}
 
 		.section-1__img {
 			margin-top: 0.5rem;
+			background: url('../img/underline.png') no-repeat;
+			width: 13.3125rem;
+			height: 1.0625rem;
 		}
 
 		.section-1__p {
@@ -203,10 +245,9 @@ body {
 			font-size: 1.125rem;
 			line-height: 1.5rem;
 			letter-spacing: 0.025rem;
-			width: 36.5625rem;
 			word-wrap: break-word;
-			margin-top:0.4375rem;
-			padding:0 0.8125rem;
+			margin-top:0.5625rem;
+
 
 			span {
 				display: block;
@@ -220,52 +261,50 @@ body {
 
 		margin-top: 4.5625rem;
 
-		.section-2__list {
-			list-style: none;
-			display: flex;
-			flex-wrap:wrap;
-			width: 66.0625rem;
-			margin:auto;
+		.section-center{
+			margin-left: 5rem;
+
+			.section-2__list {
+				list-style: none;
+				display: flex;
+				flex-wrap:wrap;
+			// width: 66.0625rem;
 			align-items: flex-start;
 
 			.list__item {
 
 				.item__link {
 					display: block;
-					height: 24.1875rem;
+					font-size: 0;
 					background-color:#e10011;
 					position: relative;
 
+					p {
+						font-family: 'Roboto',sans-serif;
+						font-weight: 900;
+						text-transform: capitalize;
+						font-size: 1.875rem;
+						letter-spacing: 0.025rem;
+						position: absolute;
+						color:#ffffff;
+						top: 16.3125rem;
+						left:2.375rem;
+
+						span {
+							border-bottom:0.3125rem solid white;
+							padding-bottom: 0.8125rem;
+						}
+
+					}
+
 					.link__img {
 						position: relative;
-						z-index: 3;
 
 						&:hover {
 							opacity: 0;
 						}
 					}
 
-
-					.link__img_hover {
-						position: absolute;
-						left: 0;
-						top: 0;
-						z-index: 2;
-
-						p {
-							font-family: 'Roboto',sans-serif;
-							font-weight: 900;
-							text-transform: capitalize;
-							font-size: 1.875rem;
-							letter-spacing: 0.025rem;
-							position: absolute;
-							color:#ffffff;
-							top: 16.3125rem;
-							left:2.375rem;
-
-						}
-
-					}
 				}
 			}
 			
@@ -289,6 +328,7 @@ body {
 
 		}
 	}
+}
 }
 
 

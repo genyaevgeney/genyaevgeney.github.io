@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Productman</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900|Roboto:300,400,700,900" rel="stylesheet"> 
@@ -31,14 +31,18 @@
 			</nav>
 		</header>
 		<main class="main">
-			<div class="main__section-1 section-1">
-				<h1 id="recent-work" class="section-1__h1">black&<span>white</span></h1>
-				<p class="section-1__p">Lorem ipsum dolor sit amet, consectetur adipisicing <span>elit sed do eiusmod tempor incididunt ut labore et</span> <span>dolore magna aliqua. Ut enim ad minim veniam</span></p>
-				<a class="section-1__link" href="#">view project</a>
+			<div class="sections">
+				<div class="main__section-1 section-1">
+					<a name="recent-work"></a>
+					<h1 class="section-1__h1">black&<br><span>white</span></h1>
+					<p class="section-1__p">Lorem ipsum dolor sit amet, consectetur adipisicing <span>elit sed do eiusmod tempor incididunt ut labore et</span> <span>dolore magna aliqua. Ut enim ad minim veniam</span></p>
+					<a class="section-1__link" href="#">view project</a>
+				</div>
+				<div class="section-2">
+					<img src="img/headphones.png" alt="headphones">
+				</div>
 			</div>
-			<div class="main__section-2">
-				<img src="img/headphones.png" alt="headphones">
-			</div>
+			
 			<nav class="main__slider-nav nav">
 				<ul class="nav__list list">
 					<li class="list__item">
@@ -59,44 +63,49 @@
 				</ul>
 			</nav>
 		</main> 
-		<div id="featured-product" class="info">
+		<a name="featured-product"></a>
+		<div class="info">
 			<div class="info__section-1 section-1">
 				<h2 class="section-1__h2">featured product</h2>
-				<img class="section-1__img" src="img/underline.png" alt="underline">
+				<span class="section-1__img"></span>
+				<!-- <img class="section-1__img" src="img/underline.png" alt="underline"> -->
 				<p class="section-1__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <span>eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
 			</div>
 			<div class="info__section-2 section-2">
-				<ul class="section-2__list list">
-					<li class="list__item item">
-						<a class="item__link link" href="">
-							<img class="link__img" src="img/image-1.jpg" alt="image">
-						</a>
-					</li>
-					<li class="list__item item">
-						<a class="item__link link" href="">
-							<img class="link__img" src="img/image-2.jpg" alt="image">
-						</a>
-					</li>
-					<li class="list__item item">
-						<a class="item__link link" href="">
-							<img class="link__img" src="img/image-3.jpg" alt="image">
-							<div class="link__img_hover">
-								<p>minimal product<br>design</p>
-								<img src="img/hover.jpg" alt="hover">
-							</div>
-						</a>
-					</li>
-					<li class="list__item item">
-						<a class="item__link link" href="">
-							<img class="link__img" src="img/image-4.jpg" alt="image">
-						</a>
-					</li>
-					<li class="list__item item">
-						<a class="item__link link" href="">
-							<img class="link__img" src="img/image-5.jpg" alt="image">
-						</a>
-					</li>
-				</ul>
+				<div class="section-center">
+					<ul class="section-2__list list">
+						<li class="list__item item">
+							<a class="item__link link" href="">
+								<p>minimal product<br><span>design</span></p>
+								<img class="link__img" src="img/image-1.jpg" alt="image">
+							</a>
+						</li>
+						<li class="list__item item">
+							<a class="item__link link" href="">
+								<p>minimal product<br><span>design</span></p>
+								<img class="link__img" src="img/image-2.jpg" alt="image">
+							</a>
+						</li>
+						<li class="list__item item">
+							<a class="item__link link" href="">
+								<p>minimal product<br><span>design</span></p>
+								<img class="link__img" src="img/image-3.jpg" alt="image">
+							</a>
+						</li>
+						<li class="list__item item">
+							<a class="item__link link" href="">
+								<p>minimal product<br><span>design</span></p>
+								<img class="link__img" src="img/image-4.jpg" alt="image">
+							</a>
+						</li>
+						<li class="list__item item">
+							<a class="item__link link" href="">
+								<p>minimal product<br><span>design</span></p>
+								<img class="link__img" src="img/image-5.jpg" alt="image">
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
