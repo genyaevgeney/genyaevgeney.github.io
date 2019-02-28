@@ -48,10 +48,25 @@ body
 {
     background-color: black;
 }
+.board .row
+{
+    *zoom: 1;
+}
 .board .row__cell
 {
     float: left; 
 
     width: 3.75rem;
     height: 3.75rem;
+}
+.board .row:before,
+.board .row:after
+{
+    display: table; 
+
+    content: ' ';
+}
+.board .row:after
+{
+    clear: both;
 }

@@ -86,6 +86,7 @@ body {
 		display: flex;
 		.section-1 {
 			width: 50%;
+			text-align: right;
 		// background-color: cyan;
 
 
@@ -97,7 +98,7 @@ body {
 			line-height: 9.375rem;
 			letter-spacing: 0.025rem;
 			margin:0;
-			margin-left: -0.3125rem;
+			
 
 
 			span {
@@ -114,13 +115,7 @@ body {
 			margin-top: 1.8125rem;
 			margin-left: 2.625rem;
 			margin-bottom: 0.9375rem;
-
-			span:first-child {
-				margin-left: 1.5625rem;
-			}
-			span:last-child {
-				margin-left: 3.25rem;
-			}
+			
 
 		}
 
@@ -132,8 +127,7 @@ body {
 			font-size: 1.5rem;
 			line-height: 2.25rem;
 			letter-spacing: 0.025rem;
-			color:#e10011;
-			margin-left: 29.0625rem;	
+			color:#e10011;	
 
 			&:hover {
 				opacity: 0.5;
@@ -211,8 +205,7 @@ body {
 .info {
 	background-color: #ffffff;
 	margin-top:6.25rem;
-	padding-bottom:5rem;
-	padding-top:6.625rem;
+	padding:6.625rem 4.84rem 5rem 4.84rem;
 	border-radius: 0.5625rem;
 	margin-bottom: 3rem;
 
@@ -247,13 +240,7 @@ body {
 			letter-spacing: 0.025rem;
 			word-wrap: break-word;
 			margin-top:0.5625rem;
-
-
-			span {
-				display: block;
-				padding: 0 0.75rem;
-			}
-
+			text-align: center;
 		}
 	}
 
@@ -262,7 +249,6 @@ body {
 		margin-top: 4.5625rem;
 
 		.section-center{
-			margin-left: 5rem;
 
 			.section-2__list {
 				list-style: none;
@@ -273,36 +259,36 @@ body {
 
 			.list__item {
 
+				position: relative;
+				background-color:#e10011;
+
+				p {
+					font-family: 'Roboto',sans-serif;
+					font-weight: 900;
+					text-transform: capitalize;
+					font-size: 1.875rem;
+					letter-spacing: 0.025rem;
+					position: absolute;
+					color:#ffffff;
+					top: 16.3125rem;
+					left:2.375rem;
+
+					span {
+						border-bottom:0.3125rem solid white;
+						padding-bottom: 0.8125rem;
+					}
+
+				}
 				.item__link {
 					display: block;
 					font-size: 0;
-					background-color:#e10011;
-					position: relative;
 
-					p {
-						font-family: 'Roboto',sans-serif;
-						font-weight: 900;
-						text-transform: capitalize;
-						font-size: 1.875rem;
-						letter-spacing: 0.025rem;
-						position: absolute;
-						color:#ffffff;
-						top: 16.3125rem;
-						left:2.375rem;
-
-						span {
-							border-bottom:0.3125rem solid white;
-							padding-bottom: 0.8125rem;
-						}
-
+					&:hover {
+						opacity: 0;
 					}
 
 					.link__img {
-						position: relative;
-
-						&:hover {
-							opacity: 0;
-						}
+						position: relative;				
 					}
 
 				}

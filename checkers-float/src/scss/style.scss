@@ -50,6 +50,8 @@ body {
 
 	.row {
 
+		*zoom:1;
+
 		&__cell {
 
 			height: 3.75rem;
@@ -57,6 +59,17 @@ body {
 			float: left;
 
 		}
+
+		&:before,
+		&:after {
+			content: " ";
+			display: table;
+		}
+
+		&:after {
+			clear:both;
+		}
+
 	}
 
 }
