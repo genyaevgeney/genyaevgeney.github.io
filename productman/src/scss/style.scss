@@ -159,10 +159,32 @@ body {
 
 		.list__item {
 			margin-left: 10px;
+
+			a {
+				display: block;
+				width:0.6875rem;
+				height:0.6875rem;
+				border-radius: 50%;
+			}
 		}
 
 		.list__item:first-child {
 			margin-left: 0;
+			a {
+				background-color: red;
+			}
+		}
+
+		.list__item:nth-child(2) {
+			a {
+				background-color: black;
+			}
+		}
+
+		.list__item:last-child {
+			a {
+				background-color: black;
+			}
 		}
 
 	}
@@ -241,6 +263,8 @@ body {
 			word-wrap: break-word;
 			margin-top:0.5625rem;
 			text-align: center;
+			width: 34.731875rem;
+			height:3rem;
 		}
 	}
 

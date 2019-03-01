@@ -186,9 +186,30 @@ body
 {
     margin-left: 10px;
 }
+.main__slider-nav .nav__list .list__item a
+{
+    display: block;
+
+    width: .6875rem;
+    height: .6875rem;
+
+    border-radius: 50%;
+}
 .main__slider-nav .nav__list .list__item:first-child
 {
     margin-left: 0;
+}
+.main__slider-nav .nav__list .list__item:first-child a
+{
+    background-color: red;
+}
+.main__slider-nav .nav__list .list__item:nth-child(2) a
+{
+    background-color: black;
+}
+.main__slider-nav .nav__list .list__item:last-child a
+{
+    background-color: black;
 }
 
 .info
@@ -240,9 +261,11 @@ body
 
     display: inline-block;
 
+    width: 34.731875rem;
+    height: 3rem; 
     margin-top: .5625rem;
 
-    text-align: center; 
+    text-align: center;
     letter-spacing: .025rem;
     word-wrap: break-word;
 }
