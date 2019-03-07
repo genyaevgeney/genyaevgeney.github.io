@@ -12,63 +12,16 @@
 	<div class="container container-1">
 		<div class="card">
 			<div class="container container-2">
-				<div class="card__main">
-					<div class="logo">
-						<a href="#" class="logo__link">
-							<img src="img/logo.jpg" alt="nike">
-						</a>
-					</div>
-					<div class="card__sections">
+				<div class="logo">
+					<a href="#" class="logo__link">
+						<img src="img/logo.jpg" alt="nike">
+					</a>
+				</div>
+				<div class="card__sections">
+					<div class="card__section-1">
 						<a href="#" class="card__link">
 							<img class="card__img" src="img/Nike-SB-Stefan-Janoski-Max.jpg" alt="nike">
 						</a>
-						<div class="card__info info">
-							<h1 class="info__heading">Nike SB Stefan Janoski Max</h1>
-							<p class="info__text">Unisex Skateboarding Shoe</p>
-							<form action="#" class="info__stars stars">
-								<input class="stars__input" id="star-4" type="radio" name="reviewStars" value="1"/>
-								<label class="stars__label" title="very good" for="star-4">&#9733;</label>
-
-								<input class="stars__input" id="star-3" type="radio" name="reviewStars" value="2"/>
-								<label class="stars__label" title="good" for="star-3">&#9733;</label>
-
-								<input class="stars__input" id="star-2" type="radio" name="reviewStars" value="3"/>
-								<label class="stars__label" title="normal" for="star-2">&#9733;</label>
-
-								<input class="stars__input" id="star-1" type="radio" name="reviewStars" value="4"/>
-								<label class="stars__label" title="bad" for="star-1">&#9733;</label>
-
-								<input class="stars__input" id="star-0" type="radio" name="reviewStars" value="5"/>
-								<label class="stars__label" title="very bad" for="star-0">&#9733;</label>
-							</form>
-							<div class="info__selects">
-								<form action="#" class="form-1 form">
-									<label class="form__label" for="select-1"></label>
-									<select class="select" name="size" id="select-1">
-										<option value="name" selected>Size</option>
-										<option value="1">6</option>
-										<option value="2">8.5</option>
-										<option value="3">11</option>
-										<option value="4">13</option>
-									</select>
-								</form>
-								<form action="#" class="form-2 form">
-									<label class="form__label" for="select-2"></label>
-									<select class="select" name="qty" id="select-2">
-										<option value="name" selected>Qty</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</form>
-							</div>
-							<div class="info__button button">
-								<a href="#" class="button__link">Add to cart</a>
-							</div>
-						</div>
-					</div>
-					<div class="card__shoe-color shoe-color">
 						<form action="#" class="shoe-color__form">
 							<input class="shoe-color__input" id="color-1" type="radio" name="color-shoes" value="1" checked/>
 							<label class="shoe-color__label" title="1-color" for="color-1"></label>
@@ -81,6 +34,40 @@
 
 							<input class="shoe-color__input" id="color-4" type="radio" name="color-shoes" value="4"/>
 							<label class="shoe-color__label" title="4-color" for="color-4"></label>
+						</form>
+					</div>
+					<div class="card__section-2 info">
+						<h1 class="info__heading">Nike SB Stefan Janoski Max</h1>
+						<p class="info__text">Unisex Skateboarding Shoe</p>
+						<ul class="info__stars stars">
+							<li class="stars__item">&#9733;</li>
+							<li class="stars__item">&#9733;</li>
+							<li class="stars__item">&#9733;</li>
+							<li class="stars__item">&#9733;</li>
+							<li class="stars__item">&#9733;</li>
+						</ul>
+						<form action="#" class="info__selects">
+							<div class="form-1 form">
+								<label class="form__label" for="select-1"></label>
+								<select class="select" name="size" id="select-1">
+									<option value="name" selected>Size</option>
+									<option value="1">6</option>
+									<option value="2">8.5</option>
+									<option value="3">11</option>
+									<option value="4">13</option>
+								</select>
+							</div>
+							<div class="form-2 form">
+								<label class="form__label" for="select-2"></label>
+								<select class="select" name="qty" id="select-2">
+									<option value="name" selected>Qty</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+							<input class="form__submit" type="submit" value="Add to cart">
 						</form>
 					</div>
 				</div>
