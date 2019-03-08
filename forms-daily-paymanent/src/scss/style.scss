@@ -231,6 +231,10 @@ body {
 	background: transparent;
 }
 
+[selected] {
+	display: none;
+}
+
 .label-1 {
 	width: 61%;
 }
