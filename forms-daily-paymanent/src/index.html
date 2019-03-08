@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
-	<title>Document</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<title>Forms</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icons8-about-48.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
 					</div>
 				</div>
 				<p class="form-1__text">Come and join our cool and amazing community, fill in your details
-					to get started. Already have an account? <a class="text__link" href="#">Log in.</a></p>
+					to get started. Already have an account? <a class="form__link" href="#">Log in.</a></p>
 					<div class="form-1__name">
 						<input type="text" class="first-name__input input" placeholder="First name">
 						<input type="text" class="first-name__input input" placeholder="Last name">
@@ -27,20 +28,60 @@
 					<input type="email" class="form-1__email-pw input" placeholder="Email address">
 					<input type="password" class="form-1__email-pw input" placeholder="Password">
 					<input class="form-1__submit" type="submit" value="Sign up for free">
-					<p class="form-1__text">By clicking on “Sign up for free”, you agree to the Terms of Service and 
-					the Privacy Policy</p>
-				</form>
-			</div>
-			<div class="background-2">
-				<form action="#" class="form-2">
-					<div class="form-2__head">	
-						<div class="head__left">
-							<p class="left__name"></p>
-							<p class="left__total"></p>
+					<p class="form-1__text">By clicking on “Sign up for free”, you agree to the <a href="#" class="form__link">Terms of Service</a> and 
+						the <a href="#" class="form__link">Privacy Policy</a></p>
+					</form>
+				</div>
+				<div class="background-2">
+					<form action="#" class="form-2">
+						<div class="form-2__head">	
+							<div class="head__left">
+								<p class="left__name">Harold Finch</p>
+								<p class="left__total">YOUR TOTAL</p>
+							</div>
+							<p class="head__price">$88</p>
 						</div>
-						<p class="price"></p>
-					</div>
-					
+						<div class="form-2__main">
+							<label class="main__label" for="number">Credit card number</label>
+							<input class="main__input" id="number" type="text" placeholder="Number" />
+							<label class="main__label" for="select-1">Expiration date</label>
+							<div class="main__selects">
+								<label class="select__label label-1" for="select-1">
+									<select class="select-1 select" name="month" id="select-1">
+										<option value="name" selected>Month</option>
+										<option value="1">January</option>
+										<option value="2">February</option>
+										<option value="3">March</option>
+										<option value="4">April</option>
+										<option value="5">May</option>
+										<option value="6">June</option>
+										<option value="7">July</option>
+										<option value="8">August</option>
+										<option value="9">September</option>
+										<option value="10">October</option>
+										<option value="11">November</option>
+										<option value="12">December</option>
+									</select>
+								</label>
+								<label class="select__label label-2" for="select-2">
+									<select class="select-2 select" name="year" id="select-2">
+										<option value="name" selected>Year</option>
+										<option value="1">1999</option>
+										<option value="2">2017</option>
+										<option value="3">2019</option>
+										<option value="4">2024</option>
+									</select>
+								</label>
+							</div>
+							<label class="main__label" for="number-2">CVV</label>
+							<div class="main__cvv">
+								<input class="main__input cvv" id="number-2" type="text" />
+								<p class="cvv__text">3 or 4 digits - <a class="form-2__link" href="#">view example</a></p>
+							</div>
+							<hr class="main__hr">
+							<input type="submit" class="main__submit" value="Pay">
+							<a href="#" class="form-2__link link-2">Cancel order</a>
+						</div>
 					</form>
 				</div>
 			</div>

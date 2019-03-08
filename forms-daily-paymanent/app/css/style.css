@@ -1,10 +1,3 @@
-@font-face
-{
-    font-family: 'Myseo';
-
-    src: url('../fonts/MuseoSansRounded-100.otf');
-}
-
 *
 {
     -webkit-box-sizing: border-box;
@@ -21,7 +14,9 @@ body
 
 body
 {
-    font-size: 100%;
+    font-size: 100%; 
+
+    background: #111a28;
 }
 
 .container
@@ -109,7 +104,7 @@ body
     color: #7a7b7f;
 }
 
-.text__link
+.form__link
 {
     text-decoration: none;
 
@@ -194,7 +189,7 @@ body
     display: flex;
 
     width: 100%;
-    padding: 35px 0; 
+    padding: 9px 0; 
 
     background: url('../img/background-2.jpg') center no-repeat;
 
@@ -208,9 +203,274 @@ body
 
 .form-2
 {
-    width: 60%;
-    height: 532px;
-    padding: 30px 30px 60px 30px; 
+    width: 42%;
 
-    background: #fff;
+    background: #f5f5f5;
+}
+
+.form-2__head
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 25px 24px 23px 24px; 
+
+    background: #efe4aa;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.head__left
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.left__name
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    display: inline-block; 
+
+    color: #75837c;
+}
+
+.left__total
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+
+    display: inline-block; 
+
+    letter-spacing: .075rem;
+
+    color: #a6a28d;
+}
+
+.head__price
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    display: inline-block; 
+
+    color: #637570;
+}
+
+.form-2__main
+{
+    width: 100%; 
+    padding: 45px 24px 23px 24px;
+}
+
+.main__label
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    display: inline-block;
+
+    margin-bottom: 9px; 
+
+    color: #9eabad;
+}
+
+.main__input
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    display: inline-block;
+
+    width: 100%;
+    margin-bottom: 9px;
+    margin-bottom: 29px;
+    padding: 13px 7px;
+
+    color: #727f82;
+    border: 2px solid #b4c1c4;
+    background: transparent;
+}
+
+.main__input:active,
+.main__input:focus
+{
+    border: 2px solid #7fcddf; 
+    outline: none;
+}
+
+.main__selects
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 26px; 
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.select
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    display: inline-block;
+
+    width: 100%;
+    padding: 13px 7px;
+
+    color: #727f82;
+    border: 2px solid #b4c1c4;
+    background: transparent;
+}
+
+.label-1
+{
+    width: 61%;
+}
+
+.label-2
+{
+    width: 33%;
+}
+
+.select:active,
+.select:focus
+{
+    outline: none;
+}
+
+.select__label
+{
+    position: relative;
+}
+
+.label-1::before
+{
+    position: absolute;
+    top: 20px;
+    right: 6px;
+    bottom: 28px;
+    left: 155px;
+
+    content: '';
+    pointer-events: none;
+
+    border: 8px solid transparent;
+    border-top: 8px solid #94a5a8;
+}
+
+.label-2::before
+{
+    position: absolute;
+    top: 20px;
+    right: 6px;
+    bottom: 28px;
+    left: 76px;
+
+    content: '';
+    pointer-events: none;
+
+    border: 8px solid transparent;
+    border-top: 8px solid #94a5a8;
+}
+
+.cvv
+{
+    width: 33%;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.cvv__text
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    display: inline-block;
+
+    color: #9eabad;
+}
+
+.form-2__link
+{
+    position: relative; 
+
+    text-decoration: none;
+
+    color: #9eabad;
+}
+
+.form-2__link::before
+{
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding-bottom: 17px;
+
+    content: '';
+
+    border-bottom: 1px solid #9eabad;
+}
+
+.main__cvv
+{
+    margin-bottom: 31px;
+}
+
+.main__hr
+{
+    margin-bottom: 30px;
+}
+
+.main__submit
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    display: inline-block;
+
+    width: 100%;
+    margin-bottom: 22px; 
+    padding: 15px 0;
+
+    color: #f0f3f1;
+    border: none;
+    background: #26b167;
+}
+
+.link-2
+{
+    display: block;
+
+    width: 29%; 
+    margin: auto;
 }

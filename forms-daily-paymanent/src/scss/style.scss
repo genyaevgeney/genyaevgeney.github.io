@@ -1,14 +1,7 @@
-@font-face {
-	font-family:'Myseo';
-	src:url('../fonts/MuseoSansRounded-100.otf');
-}
-
-
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding:0;
-	// transition: all .4s ease;
 }
 
 html,body {
@@ -17,7 +10,7 @@ html,body {
 }
 
 body {
-	// background: #111a28;
+	background: #111a28;
 	font-size: 100%;
 }
 
@@ -31,7 +24,6 @@ body {
 
 .background-1 {
 	width: 100%;
-	// height: 600px;
 	background: linear-gradient(45deg,#ff512f,#dd2476);
 	display: flex;
 	justify-content: center;
@@ -41,10 +33,8 @@ body {
 
 .form-1 {
 	width: 60%;
-	// height:470px;
 	background: #ffffff;
 	padding: 30px 30px 60px 30px;
-	// display: flex;
 
 }
 
@@ -79,7 +69,7 @@ body {
 	margin-bottom: 32px;
 }
 
-.text__link {
+.form__link {
 	text-decoration: none;
 	color:#ea355a;
 }
@@ -90,7 +80,6 @@ body {
 	border-radius: 3px;
 	font-family:'Arial',sans-serif;
 	font-size: 14px;
-	// font-weight: 600;
 	color:#7a7b7f;
 	padding: 12px 0 12px 15px;
 }
@@ -138,18 +127,206 @@ body {
 
 .background-2 {
 	width: 100%;
-	// height: 600px;
 	background: url('../img/background-2.jpg') center no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 35px 0;
+	padding: 9px 0;
 }
 
 .form-2 {
-	width: 60%;
-	height:532px;
-	background: #ffffff;
-	padding: 30px 30px 60px 30px;
-	// display: flex;
+	width: 42%;
+	background: #f5f5f5;
+}
+
+.form-2__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #efe4aa;
+	padding: 25px 24px 23px 24px;
+}
+
+.head__left {
+	display: flex;
+	flex-direction: column;
+}
+
+.left__name {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color:#75837c;
+	display: inline-block;
+}
+
+.left__total {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	color:#a6a28d;
+	letter-spacing: 0.075rem;
+	display: inline-block;
+}
+
+.head__price {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	color:#637570;
+	display: inline-block;
+}
+
+.form-2__main {
+	padding: 45px 24px 23px 24px;
+	width: 100%;
+}
+
+.main__label {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color:#9eabad;
+	margin-bottom:9px;
+	
+}
+
+.main__input {
+	display:inline-block;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color:#727f82;
+	margin-bottom:9px;
+	border: 2px solid #b4c1c4;
+	padding: 13px 7px;
+	margin-bottom:29px;
+	background: transparent;
+}
+
+
+.main__input:active, .main__input:focus{
+	outline:none;
+	border: 2px solid #7fcddf;
+}
+
+.main__selects {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 26px;
+}
+
+.select {
+	display:inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	width: 100%;
+	color:#727f82;
+	border: 2px solid #b4c1c4;
+	padding: 13px 7px;
+	background: transparent;
+}
+
+.label-1 {
+	width: 61%;
+}
+
+.label-2 {
+	width: 33%;
+}
+
+.select:active, .select:focus{
+	outline:none;
+}
+
+.select__label {
+	position: relative;
+}
+
+.label-1::before {
+	position: absolute;
+	top: 20px;
+	right: 6px;
+	bottom: 28px;
+	left: 155px;
+	content: '';
+	pointer-events: none;
+	border: 8px solid transparent;
+	border-top: 8px solid #94a5a8;
+	
+}
+
+.label-2::before {
+	position: absolute;
+	top: 20px;
+	right: 6px;
+	bottom: 28px;
+	left: 76px;
+	content: '';
+	pointer-events: none;
+	border: 8px solid transparent;
+	border-top: 8px solid #94a5a8;
+	
+}
+
+.cvv {
+	width: 33%;
+	margin: 0;
+	margin-right: 8px;
+}
+
+.cvv__text {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color:#9eabad;
+}
+
+.form-2__link {
+	text-decoration: none;
+	color:#9eabad;
+	position: relative;
+}
+
+.form-2__link::before {
+	content: '';
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	padding-bottom: 17px;
+	border-bottom: 1px solid #9eabad;
+	position: absolute;
+}
+
+.main__cvv {
+	margin-bottom:31px;
+}
+
+.main__hr {
+	margin-bottom:30px;
+}
+
+.main__submit {
+	display: inline-block;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color:#f0f3f1;
+	background: #26b167;
+	border: none;
+	padding: 15px 0;
+	margin-bottom: 22px;
+}
+
+.link-2 {
+	display: block;
+	margin:auto;
+	width:29%;
 }
