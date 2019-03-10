@@ -22,11 +22,11 @@
 				<p class="form-1__text">Come and join our cool and amazing community, fill in your details
 					to get started. Already have an account? <a class="form__link" href="#">Log in.</a></p>
 					<div class="form-1__name">
-						<input type="text" class="first-name__input input" placeholder="First name">
-						<input type="text" class="first-name__input input" placeholder="Last name">
+						<input required type="text" class="first-name__input input" placeholder="First name">
+						<input required type="text" class="first-name__input input" placeholder="Last name">
 					</div>
-					<input type="email" class="form-1__email-pw input" placeholder="Email address">
-					<input type="password" class="form-1__email-pw input" placeholder="Password">
+					<input required type="email" class="form-1__email-pw input" placeholder="Email address">
+					<input required type="password" class="form-1__email-pw input" placeholder="Password">
 					<input class="form-1__submit" type="submit" value="Sign up for free">
 					<p class="form-1__text">By clicking on “Sign up for free”, you agree to the <a href="#" class="form__link">Terms of Service</a> and 
 						the <a href="#" class="form__link">Privacy Policy</a></p>
@@ -43,11 +43,11 @@
 						</div>
 						<div class="form-2__main">
 							<label class="main__label" for="number">Credit card number</label>
-							<input class="main__input" id="number" type="text" placeholder="Number" />
+							<input required class="main__input" id="number" type="text" placeholder="Number" />
 							<label class="main__label" for="select-1">Expiration date</label>
 							<div class="main__selects">
 								<label class="select__label label-1" for="select-1">
-									<select class="select-1 select" name="month" id="select-1">
+									<select required class="select-1 select" name="month" id="select-1">
 										<option value="name" selected>Month</option>
 										<option value="1">January</option>
 										<option value="2">February</option>
@@ -64,7 +64,7 @@
 									</select>
 								</label>
 								<label class="select__label label-2" for="select-2">
-									<select class="select-2 select" name="year" id="select-2">
+									<select required class="select-2 select" name="year" id="select-2">
 										<option value="name" selected>Year</option>
 										<option value="1">1999</option>
 										<option value="2">2017</option>
@@ -75,7 +75,7 @@
 							</div>
 							<label class="main__label" for="number-2">CVV</label>
 							<div class="main__cvv">
-								<input class="main__input cvv" id="number-2" type="text" />
+								<input required class="main__input cvv" id="number-2" type="text" />
 								<p class="cvv__text">3 or 4 digits - <a class="form-2__link" href="#">view example</a></p>
 							</div>
 							<hr class="main__hr">

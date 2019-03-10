@@ -1,142 +1,113 @@
-*
-{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
 html,
-body
-{
-    min-height: 100vh;
+body {
+	min-height: 100vh;
 }
 
-body
-{
-    font-size: 100%;
-
-    background-color: lightcyan;
+body {
+	font-size: 100%;
+	background-color: lightcyan;
 }
 
-.board
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    width: 30rem;
-    height: 30rem;
-    margin: auto;
-
-    border: 1.5rem solid brown; 
-    background-color: yellow;
+.board {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 30rem;
+	height: 30rem;
+	background-color: yellow;
+	border: 1.5rem solid brown;
 }
 
-.cell
-{
-    position: absolute;
-
-    width: 3.75rem; 
-    height: 3.75rem;
+.cell {
+	position: absolute;
+	height: 3.75rem;
+	width: 3.75rem;
 }
 
-.odd-row .cell:nth-child(even)
-{
-    background-color: black;
+.odd-row .cell:nth-child(even) {
+	background-color: black;
 }
 
-.odd-row .cell:nth-child(odd)
-{
-    background-color: white;
+.odd-row .cell:nth-child(odd) {
+	background-color: white;
 }
 
-.even-row .cell:nth-child(even)
-{
-    background-color: white;
+.even-row .cell:nth-child(even) {
+	background-color: white;
 }
 
-.even-row .cell:nth-child(odd)
-{
-    background-color: black;
+.even-row .cell:nth-child(odd) {
+	background-color: black;
 }
 
-.row-1
-{
-    top: 0;
+.row-1 {
+	top: 0;
 }
 
-.row-2
-{
-    top: 3.75rem;
+.row-2 {
+	top: 3.75rem;
 }
 
-.row-3
-{
-    top: 7.5rem;
+.row-3 {
+	top: 7.5rem;
 }
 
-.row-4
-{
-    top: 11.25rem;
+.row-4 {
+	top: 11.25rem;
 }
 
-.row-5
-{
-    top: 15rem;
+.row-5 {
+	top: 15rem;
 }
 
-.row-6
-{
-    top: 18.75rem;
+.row-6 {
+	top: 18.75rem;
 }
 
-.row-7
-{
-    top: 22.5rem;
+.row-7 {
+	top: 22.5rem;
 }
 
-.row-8
-{
-    top: 26.25rem;
+.row-8 {
+	top: 26.25rem;
 }
 
-.col-1
-{
-    left: 0;
+.col-1 {
+	left: 0;
 }
 
-.col-2
-{
-    left: 3.75rem;
+.col-2 {
+	left: 3.75rem;
 }
 
-.col-3
-{
-    left: 7.5rem;
+.col-3 {
+	left: 7.5rem;
 }
 
-.col-4
-{
-    left: 11.25rem;
+.col-4 {
+	left: 11.25rem;
 }
 
-.col-5
-{
-    left: 15rem;
+.col-5 {
+	left: 15rem;
 }
 
-.col-6
-{
-    left: 18.75rem;
+.col-6 {
+	left: 18.75rem;
 }
 
-.col-7
-{
-    left: 22.5rem;
+.col-7 {
+	left: 22.5rem;
 }
 
-.col-8
-{
-    left: 26.25rem;
+.col-8 {
+	left: 26.25rem;
 }

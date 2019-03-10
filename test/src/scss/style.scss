@@ -1,0 +1,50 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+section {
+	min-height:20vh;
+	border-bottom: 1px solid black;
+}
+
+// @for $i from 1 through 3 {
+// 	.section-#{$i} {
+// 		background-color:red;
+// 	}
+
+// }
+
+$colors: (
+	red,blue,green,black,grey,
+	);
+
+@each $color in $colors {
+  .#{$color} {
+    background-color: #{$color};
+  }
+}
+
+// $i: 6;
+// @while $i > 0 {
+//  .item-#{$i} { width: 2em * $i; }
+//  $i: $i - 2;
+// }
+
+
+// $z-index: (
+//     navbar: 1,
+//     content: 2
+// );
+
+// @function z($key) {
+//   @return map-get($z-index, $key);
+// }
+
+// @mixin z-index($key) {
+//   z-index: z-index($key);
+// }
+
+// .navigation {
+//   @include z-index(navbar); // 1
+// }
