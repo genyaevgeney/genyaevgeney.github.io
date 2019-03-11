@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
 	<title>Forms</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/icons8-about-48.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -14,10 +13,8 @@
 		<div class="background-1">
 			<form action="#" class="form-1">
 				<div class="form-1__head">
-					<div class="wrap-flex">
 						<img class="form-1__img" src="img/sign-up-icon.png" alt="icon">
 						<h1 class="form-1__heading">Create your free account</h1>
-					</div>
 				</div>
 				<p class="form-1__text">Come and join our cool and amazing community, fill in your details
 					to get started. Already have an account? <a class="form__link" href="#">Log in.</a></p>
@@ -43,12 +40,12 @@
 						</div>
 						<div class="form-2__main">
 							<label class="main__label" for="number">Credit card number</label>
-							<input required class="main__input" id="number" type="text" placeholder="Number" />
+							<input required class="main__input" id="number" type="text" pattern="[0-9]{13,16}" placeholder="Number" />
 							<label class="main__label" for="select-1">Expiration date</label>
 							<div class="main__selects">
 								<label class="select__label label-1" for="select-1">
 									<select required class="select-1 select" name="month" id="select-1">
-										<option value="name" selected>Month</option>
+										<option value="" selected>Month</option>
 										<option value="1">January</option>
 										<option value="2">February</option>
 										<option value="3">March</option>
@@ -65,7 +62,7 @@
 								</label>
 								<label class="select__label label-2" for="select-2">
 									<select required class="select-2 select" name="year" id="select-2">
-										<option value="name" selected>Year</option>
+										<option value="" selected>Year</option>
 										<option value="1">1999</option>
 										<option value="2">2017</option>
 										<option value="3">2019</option>
@@ -75,7 +72,7 @@
 							</div>
 							<label class="main__label" for="number-2">CVV</label>
 							<div class="main__cvv">
-								<input required class="main__input cvv" id="number-2" type="text" />
+								<input required class="main__input cvv" id="number-2" type="text" pattern="[0-1][0-9]-[0-9][0-9]"/>
 								<p class="cvv__text">3 or 4 digits - <a class="form-2__link" href="#">view example</a></p>
 							</div>
 							<hr class="main__hr">
