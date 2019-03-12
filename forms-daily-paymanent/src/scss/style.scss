@@ -38,29 +38,18 @@ body {
 
 }
 
-.form-1__head {
-	display: flex;
-	// display: inline-block;
-	width: 77%;
-	margin-bottom: 16px;
-	justify-content: space-between;
-	align-items: center;
-	vertical-align: middle;
-}
 
-// .wrap-flex {
-// 	display: flex;
-// 	justify-content: space-between;
-// 	align-items: center;
-// }
 
 .form-1__heading {
-	display: inline-block;
-	margin: 0;
-	font-family:'Arial',sans-serif;
-	font-size: 24px;
-	line-height: 20px;
-	font-weight: 700;
+    display: inline-block;
+    margin: 0;
+    font-family: "Arial",sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: url(../img/sign-up-icon.png) no-repeat;
+    padding-left: 35px;
 }
 
 .form-1__text {
