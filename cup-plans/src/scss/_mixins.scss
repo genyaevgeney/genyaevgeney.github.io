@@ -1,10 +1,11 @@
-@mixin padding-hack($padding-top: 100) {
+@mixin padding-hack($padding-top: 100,$margin-bottom:0,$margin-right:0) {
 	.padding-hack {
-		$percent:0%;
 		position: relative;
-		padding-top:$padding-top + $percent;
+		padding-top:$padding-top + 0%;
 		width: 100%;
 		overflow: hidden;
+		margin-bottom: $margin-bottom + 0px;
+		margin-right:$margin-right + 0px;
 		@content;
 
 

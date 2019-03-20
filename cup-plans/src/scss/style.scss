@@ -45,27 +45,38 @@ body {
 	align-items: center;
 	padding: 42px 109px;
 	border-radius: 6px;
+	min-height: 54vh;
 }
 
 .price {
 	font-family: 'Miso-Bold';
 	color:  #02995b;
 	font-size: 70px;
-	line-height: 58px;
-	margin-bottom: 24px;
+	flex-grow: 0.7;
 }
 
-@include padding-hack() {
-	margin-bottom: 38px;
+.grow:nth-of-type(1){
+	flex-grow: 1.5;
+	width: 100%;
+}
+
+.grow:nth-of-type(2){
+	flex-grow: 0.7;
+}
+
+
+@include padding-hack(100,38) {
+	margin-bottom: 0;
 }
 
 .color {
 	font-family: 'Miso';
 	color:  #333333;
 	font-size: 56px;
-	line-height: 42px;
-	margin-bottom: 40px;
+	flex-grow: 1;
 }
+
+
 
 .text {
 	font-family: 'Lato';
@@ -80,10 +91,5 @@ body {
 	padding: 52px 109px;
 }
 
-.price-main {
-	margin-bottom: 44px;
-}
 
-.cup-main {
-	margin-bottom: 48px;
-}
+
