@@ -146,27 +146,20 @@ body {
 	margin-bottom: 56px;
 }
 
-.section:nth-child(1) .date,
 .section:nth-child(1) .heading {
 	margin: 0;
 }
 
-.p-main,
-.h-main {
+.main {
 	position: absolute;
 	z-index: 2;
 	left: 45px;
-}
-
-.p-main {
-	top: 395px;
+	top: 405px;
+	width: 59%;
 }
 
 .h-main {
 	font-size: 30px;
-	top: 430px;
-	display: inline-block;
-	width: 59%;
 	color: #fff;
 }
 
