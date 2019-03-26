@@ -43,37 +43,38 @@ body {
 	flex-direction: column;
 	background: #ffffff;
 	align-items: center;
-	padding: 42px 109px;
+	// padding: 42px 109px; //142.75
+	width:31.7%;
 	border-radius: 6px;
-	min-height: 54vh;
+	min-height: 438px;
 }
 
 .price {
 	font-family: 'Miso-Bold';
 	color:  #02995b;
 	font-size: 70px;
-	flex-grow: 0.7;
+	flex-grow: 1;
+	display: flex;
+	align-items: flex-end;
 }
 
 .grow:nth-of-type(1){
-	flex-grow: 1.5;
-	width: 100%;
+	flex-grow: 0.7;
+	width: 39.5%;
 }
 
 .grow:nth-of-type(2){
-	flex-grow: 0.7;
+	flex-grow: 1.1;
 }
 
 
-@include padding-hack(100,38) {
-	margin-bottom: 0;
-}
+@include padding-hack();
 
 .color {
 	font-family: 'Miso';
 	color:  #333333;
 	font-size: 56px;
-	flex-grow: 1;
+	flex-grow: 0.6;
 }
 
 
@@ -87,8 +88,23 @@ body {
 	text-align: center;
 }
 
+.price-main {
+	flex-grow: 1;
+	align-items: flex-start;
+}
+
+.color-main {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.grow-main {
+	flex-grow: 0.8;
+}
+
 .section-main {
-	padding: 52px 109px;
+	padding: 32px 0;
 }
 
 
