@@ -3,8 +3,8 @@
 
 	function showPrimeNumbers() {
 		alert('При создании интервала чисел нужно вводить только положительные числа, которые больше нуля и конец интервала не может быть меньше начала. При неправильном введении значений появится сообщение с ошибкой.');
-		let firstNumber=prompt("Введите начало интервала");
-		let secondNumber=prompt("Введите конец интервала");
+		let firstNumber= +prompt("Введите начало интервала");
+		let secondNumber= +prompt("Введите конец интервала");
 		function isNumeric(n) {
 			return !isNaN(parseFloat(n)) && isFinite(n);
 		}
