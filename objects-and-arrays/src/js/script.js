@@ -1,18 +1,23 @@
-alert('Возведение элемнтов массива в куб.');
+;(function(){
+	"use strict";
 
-let arr=[6,2,4];
+	alert('Возведение элемнтов массива в куб.');
 
-function getCube(x) {
-return x*x*x;
-}
+	let arr=[6,2,4];
 
-function map(fn,array) {
-let mainArr = [];
-for(let i = 0;i<array.length;i++) {
-mainArr[i]=fn(arr[i]);
-}
-return 'Новый массив: ' + mainArr;
-}
+	function getCube(x) {
+		return x*x*x;
+	}
 
-alert(map(getCube,arr));
-alert('Старый массив: '+arr);
+	function map(fn,array) {
+		let mainArr = [];
+		for(let i = 0;i<array.length;i++) {
+			mainArr[i]=fn(arr[i]);
+		}
+		return 'Новый массив: ' + mainArr;
+	}
+
+	alert(map(getCube,arr));
+	alert('Старый массив: '+arr);
+
+})();
