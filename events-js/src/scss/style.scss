@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+
+html,body {
+	min-height: 100vh;
+}
+
+
+body {
+	font-size: 100%;
+	background: linear-gradient(to right, #ffa17f, #00223e);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.area {
+	width: 700px;
+	height: 500px;
+	background-color: white;
+	border: 5px solid black;
+	padding: 20px;
+}
+
