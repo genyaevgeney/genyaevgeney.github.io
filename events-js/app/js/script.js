@@ -3,8 +3,7 @@
 
   let area = document.createElement('div');
   area.classList.add('area');
-  let parentBody = document.getElementsByTagName('body');
-  parentBody[0].appendChild(area);
+  document.body.appendChild(area);
   let content;
 
   function createTextarea(e){
@@ -14,7 +13,7 @@
       area.parentNode.removeChild(area);
       area = document.createElement('textarea');
       area.classList.add('area');
-      parentBody[0].appendChild(area);
+      document.body.appendChild(area);
       area.value = content;
     }
   }
@@ -24,7 +23,7 @@
       area.parentNode.removeChild(area);
       area = document.createElement('div');
       area.classList.add('area');
-      parentBody[0].appendChild(area);
+      document.body.appendChild(area);
       area.innerHTML = content;
     }
   }
@@ -35,12 +34,12 @@
       area.parentNode.removeChild(area);
       area = document.createElement('div');
       area.classList.add('area');
-      parentBody[0].appendChild(area);
+      document.body.appendChild(area);
       area.innerHTML = text;
     }
   }
 
-  parentBody[0].addEventListener('keydown',createTextarea);
-  parentBody[0].addEventListener('keydown',saveChanges);
-  parentBody[0].addEventListener('keydown',backToDiv);
+  document.body.addEventListener('keydown',createTextarea);
+  document.body.addEventListener('keydown',saveChanges);
+  document.body.addEventListener('keydown',backToDiv);
 })();
