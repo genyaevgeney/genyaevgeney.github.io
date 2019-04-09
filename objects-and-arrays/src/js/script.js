@@ -12,7 +12,7 @@
 	function map(fn,array) {
 		let mainArr = [];
 		for(let i = 0;i<array.length;i++) {
-			mainArr[i]=fn(arr[i]);
+			mainArr.push(fn(arr[i]));
 		}
 		return 'Новый массив: ' + mainArr;
 	}

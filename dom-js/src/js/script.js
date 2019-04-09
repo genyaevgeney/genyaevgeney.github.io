@@ -1,9 +1,6 @@
 ;(function(){
   "use strict";
-
-  function showPlayList () {
-
-    var playList = [
+  var playList = [
     {
       author: "LED ZEPPELIN",
       song:"STAIRWAY TO HEAVEN"
@@ -38,29 +35,27 @@
     }
     ];
 
+  function showPlayList (data) {
 
-    let orderedList = document.createElement('ol');
+    const orderedList = document.createElement('ol');
     orderedList.setAttribute('type', 'I');
-    let parentBody = document.getElementsByTagName('body');
-    let parentList =document.getElementsByTagName('ol');
-    let parentItem =document.getElementsByTagName('li');
-    parentBody[0].appendChild(orderedList);
-    parentBody[0].style.minHeight = "100vh";
-    parentBody[0].style.background = "linear-gradient(to right, #ffa17f, #00223e)";
-    parentBody[0].style.display = "flex";
-    parentBody[0].style.justifyContent = "center";
-    parentBody[0].style.alignItems = "center";
-    parentList[0].style.color = "lightgoldenrodyellow";
+    document.body.appendChild(orderedList);
+    document.body.style.minHeight = "100vh";
+    document.body.style.background = "linear-gradient(to right, #ffa17f, #00223e)";
+    document.body.style.display = "flex";
+    document.body.style.justifyContent = "center";
+    document.body.style.alignItems = "center";
+    orderedList.style.color = "lightgoldenrodyellow";
 
-    for(let i = 0;i < playList.length;i++) {
-      let listItem = document.createElement('li');  
-      parentList[0].appendChild(listItem);
-      let link = document.createElement('a');
-      link.innerText = `${playList[i].author} : ${playList[i].song}`;
-      parentItem[i].appendChild(link);
+    for(let i = 0;i < data.length;i++) {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');  
+      link.innerText = `${data[i].author} : ${data[i].song}`;
+      listItem.appendChild(link);
+      orderedList.appendChild(listItem);
     }
   }
 
-  showPlayList();
+  showPlayList(playList);
 
 })();
