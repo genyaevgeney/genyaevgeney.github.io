@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import 'mixins';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+
+html,body {
+	min-height: 100vh;
+}
+
+
+body {
+	background: #212534;
+}
+
+.active {
+	border-bottom:2px solid white;
+}
+
+
+.container {
+	max-width: 1008px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section {
+	width: 100%;
+	background: url('../img/Layer.jpg') no-repeat;
+	display: flex;
+	justify-content: center;
+	padding: 159px 0;
+
+	&__card {
+		width:59.6%;
+	}
+
+	&__tabs {
+		display: flex;
+		justify-content: space-between;	
+		padding: 0 50px;
+		background-color: #2b3040;
+	}
+
+	&__tab {
+		width:29.6%;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		padding:33px 0 35px 0;
+		font-family: 'Lato',sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		color:#fdfdfd;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&:hover {
+			background: rgba(transparent,.1);
+		}
+	}
+
+	&__icon {
+		$size:22px;
+		height: $size;
+		width: $size;
+		margin-bottom: 12px;
+	}
+
+	&__tooltip-icon {
+		background: url('../img/tooltip.png') no-repeat center;
+	}
+
+	&__card-icon {
+		background: url('../img/card.png') no-repeat center;
+	}
+
+	&__basket-icon {
+		background: url('../img/basket.png') no-repeat center;
+	}
+
+	&__tab-content {
+	}
+
+	&__tab-item {
+		display: flex;
+		background-color: #212534;
+		padding: 58px 40px 62px 46px;
+	}
+
+	@include padding-hack(144,26);
+
+	
+
+	&__photo {
+		width:31.1%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+	&__stars {
+		display: flex;
+		list-style: none;
+		width:81.3%;
+		justify-content: space-between;
+
+		& > *:not(:last-child) {
+			color:yellow;
+		}
+
+		& > *:last-child {
+			color:#4b536b;
+		}
+	}
+
+	&__info {
+		width: 68.9%;
+		padding: 12px 0 0 42px;
+	}
+
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 44px;
+	}
+
+	&__game {
+		font-family: 'Lato',sans-serif;
+		font-weight: 400;
+		font-size: 32px;
+		color:#fdfdfd;
+		margin-bottom: 15px;
+	}
+
+	&__date {
+		font-family: 'Lato',sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		color:#fdfdfd;
+	}
+
+	&__rating {
+		border:2px solid #787c9b;
+		border-radius: 50%;
+		font-family: 'Lato',sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		color:#aaadbb;
+		width: 22.4%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__description {
+		font-family: 'Lato',sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color:#b7bacd;
+		margin-bottom: 55px;
+	}
+
+	&__buy {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__discount {
+		font-family: 'Lato',sans-serif;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		color:#fedc3f;
+	}
+
+	&__value {
+		font-family: 'Lato',sans-serif;
+		font-weight: 400;
+		font-size: 32px;
+		color:#ffffff;
+	}
+
+	&__btn {
+		font-family: 'Lato',sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+		color:#ffffff;
+		background: #13e28d;
+		border: none;
+		border-radius: 3px;
+		width: 52.5%;
+		cursor: pointer;
+
+		&:hover {
+			background: lighten(#13e28d,15);
+		}
+	}
+
+	.another-tab-item {
+		flex-direction: column;
+		align-items: center;
+		padding: 63px 50px 63px 50px;
+	}
+
+	&__another-heading {
+		font-family: 'Lato',sans-serif;
+		font-weight: 400;
+		font-size: 32px;
+		color:#ffffff;
+		margin-bottom: 25px;
+	}
+
+	&__another-description {
+		font-family: 'Lato',sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color:#b7bacd;
+		text-align: justify;
+
+	}
+
+}
+
