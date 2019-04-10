@@ -36,7 +36,7 @@ body {
 
 .section {
 	width: 100%;
-	background: url("../img/Layer.jpg") no-repeat;
+	background: url("../img/layer.jpg") no-repeat;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
