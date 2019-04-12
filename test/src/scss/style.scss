@@ -1,348 +1,38 @@
-@import 'mixins';
-
 * {
-	padding: 0;
-	margin: 0;
 	box-sizing: border-box;
+	margin: 0;
+	padding:0;
 }
 
-html, body {
+html,body {
 	min-height: 100vh;
 }
+
 
 body {
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-	color: white;
+	background: #212534;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-.container {
-	width: 100%;
-	max-width: 900px;
-	margin: auto;
+.section__wrapper-diagram {
+  width:60px;
+  height:60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: relative;
 }
 
-header {
-	background: #000000 url("../img/hero-bg.jpg") no-repeat;
-	background-size: cover;
-	color:white;
-}
-
-.container {
-	width: 100%;
-	max-width:900px;
-	margin: auto;
-	min-height: 100vh;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-
-.div {
-	flex-grow: 1;
-	display: flex;
-}
-
-.div-1{
-	& > * {
-		display: block;
-		font-size: 0;
-	}
-	flex-grow: 3;
-	align-items: flex-end;
-	padding-bottom:1rem;
-}
-
-.div-2{
-	flex-grow: 1;
-}
-
-.div-3{
-	flex-grow: 3;
-	max-width: 50%;
+.section__diagram {
 
 }
 
-.div-4{
-	display: block;
-	flex-grow: 2;
-
-	@include button(5px,50px,white) {
-		border-style:none;
-		border-radius: 5px;
-		position: relative;
-
-		&::after,
-		&::before {
-			content:"";
-			position: absolute;
-
-		}
-
-		&::after{
-			min-height: 50px;
-			min-width: 5px;
-			top:100%;
-			left:50%;
-			transform: translateX(-50%);
-			background-color: yellow;
-		}
-
-		&::before {
-			width: 10px;
-			height: 10px;
-			bottom: -10%;
-			right: 50%;
-			transform: translateX(50%) rotate(45deg);
-			border-right:5px solid yellow;
-			border-bottom:5px solid yellow;
-
-		}
-	}
+.section__rating {
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background-color: #212534;
+  position: absolute;
 }
-
-.section-1 {
-	background-color: black;
-}
-
-.container-2 {
-	width: 100%;
-	max-width: 900px;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-
-	.logo {
-		height: 20px;
-		width: 60px;
-		background-color: yellow;
-	}
-
-	ul {
-		display: flex;
-		list-style: none;
-	}
-
-	li {
-		$size:20px;
-		width: $size;
-		height: $size;
-		margin-right: 10px;
-		background-color: yellow;
-	}
-
-	li:last-child {
-		margin-right: 0;
-	}
-}
-
-.section-2 {
-	background-color:aqua;
-
-	.container-3 {
-		width: 100%;
-		max-width: 900px;
-		margin:auto;
-		min-height: 100vh;
-		display: flex;
-		align-items: center;
-
-		.div {
-			width: 50%;
-			height: 500px;
-
-		}
-
-		.div-1 {
-			background-color: blue;
-		}
-
-		.div-2 {
-			background-color: yellow;
-		}
-	}
-}
-
-.section-3 {
-	background-color:lightgreen;
-
-	.container-4 {
-		width: 100%;
-		max-width: 900px;
-		margin:auto;
-		min-height: 100vh;
-		display: flex;
-		align-items: center;
-
-		.dv {
-			height: 500px;
-		}
-
-		.dv-1 {
-			background-color: black;
-			flex-grow: 3;
-		}
-
-		.dv-2 {
-			background-color: yellow;
-			flex-grow: 4;
-		}
-	}
-}
-
-.section-4 {
-	background-color:yellow;
-
-	.container-5 {
-		width: 100%;
-		max-width: 900px;
-		margin:auto;
-		min-height: 100vh;
-		display:flex;
-		align-items: flex-end;
-		padding-bottom: 5%;
-		.dv{
-			height: 500px;
-			width: 55.6%;
-			background-color: blue;
-		}
-	}
-}
-
-.section-5 {
-	background-color:black;
-
-	.container-6 {
-		width: 100%;
-		max-width: 900px;
-		margin:auto;
-		min-height: 100vh;
-		display:flex;
-		align-items: flex-end;
-		padding-bottom: 5%;
-		justify-content: flex-end;
-		.dv{
-			height: 500px;
-			width: 55.6%;
-			background-color: blue;
-		}
-	}
-}
-
-.section-6 {
-	background-color:grey;
-
-	.container-7 {
-		width: 100%;
-		max-width: 200px;
-		margin:auto;
-		display: flex;
-		flex-direction: column;
-		align-items:center;
-	}
-}
-
-.section-7 {
-	background-color:silver;
-
-	.container-8 {
-		width: 100%;
-		max-width: 900px;
-		margin:auto;
-		display: flex;
-		justify-content: space-between;
-		padding: 50px 0;
-	}
-
-	.dv {
-		height: 150px;
-		width: 150px;
-		border-radius: 50%;
-		background-color: white;
-	}
-
-	.dv-2 {
-		position: relative;
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-		}
-
-		&::before{
-			width: 243px;
-			height: 137px;
-			top: -33px;
-			right: 142px;
-			// background-color: yellow;
-			border-top: 12px solid black;
-			border-top-left-radius: 50%;
-			border-top-right-radius: 50%;
-		}
-
-		&::after {
-			width: 243px;
-			height: 137px;
-			top: -33px;
-			left: 142px;
-			// background-color: yellow;
-			border-top: 12px solid black;
-			border-top-left-radius: 50%;
-			border-top-right-radius: 50%;
-		}
-	}
-}
-
-
-// *{
-// 	margin:0;
-// 	padding: 0;
-// }
-
-// section {
-// 	min-height:20vh;
-// 	border-bottom: 1px solid black;
-// }
-
-// @for $i from 1 through 3 {
-// 	.section-#{$i} {
-// 		background-color:red;
-// 	}
-
-// }
-
-$colors: (
-	red,blue,green,black,grey,
-	);
-
-@each $color in $colors {
-	.#{$color} {
-		background-color: #{$color};
-	}
-}
-
-// $i: 6;
-// @while $i > 0 {
-//  .item-#{$i} { width: 2em * $i; }
-//  $i: $i - 2;
-// }
-
-
-// $z-index: (
-//     navbar: 1,
-//     content: 2
-// );
-
-// @function z($key) {
-//   @return map-get($z-index, $key);
-// }
-
-// @mixin z-index($key) {
-//   z-index: z-index($key);
-// }
-
-// .navigation {
-//   @include z-index(navbar); // 1
-// }
-

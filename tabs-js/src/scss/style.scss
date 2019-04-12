@@ -147,6 +147,15 @@ body {
 		color:#fdfdfd;
 	}
 
+	&__wrapper-diagram {
+		width:60px;
+		height:60px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		position: relative;
+	}
+
 	&__rating {
 		border:2px solid #787c9b;
 		border-radius: 50%;
@@ -154,10 +163,14 @@ body {
 		font-weight: 400;
 		font-size: 20px;
 		color:#aaadbb;
-		width: 19.4%;
+		$size:54px;
+		width: $size;
+		height: $size;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: absolute;
+		background-color: #212534;
 	}
 
 	&__description {
