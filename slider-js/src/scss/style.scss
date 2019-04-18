@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+@import "slick";
+@import "slick-theme";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+
+html,body {
+	min-height: 100vh;
+}
+
+
+body {
+	// background: linear-gradient(to right, rgb(255, 161, 127), rgb(0, 34, 62));;
+}
+
+.section {
+	padding: 64px 0 128px 0;
+	position: relative;
+
+
+	&__subtitle {
+		font-family: 'Poppins',sans-serif;
+		font-weight: 600;
+		font-size: 18px;
+		letter-spacing: 0.2rem;
+		color: #303030;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-family: 'Poppins',sans-serif;
+		text-align: center;
+		font-weight: 600;
+		font-size: 86px;
+		line-height: 90px;
+		color: #000000;
+		text-transform: uppercase;
+
+		&:last-of-type {
+			margin-bottom: 106px;
+		}
+	}
+
+	&__slider {
+		margin: 0 25px;
+	}
+
+	&__plus {
+		background: url("../img/plus.png") no-repeat center;
+		$size:30px;
+		height: $size;
+		width: $size;
+		display: block;
+		position:absolute;
+		right: 25%;
+		top: 4%;
+	}
+
+	&__rectangle {
+		background: url("../img/Rectangle.png") no-repeat center;
+		$size:44px;
+		height: $size;
+		width: $size;
+		display: block;
+		position:absolute;
+		top: 27%;
+		left: 13%;
+	}
+
+}
