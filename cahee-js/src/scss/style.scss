@@ -12,17 +12,14 @@ html,body {
 	min-height: 100vh;
 }
 
-
 body {
-	
+
 }
-
-
-
 
 .first-screen {
 	background: url('../img/first-screen.jpg') no-repeat center;
 	position: relative;
+	background-size: cover;
 
 	.container {
 		max-width: 1170px;
@@ -132,19 +129,18 @@ body {
 		margin: auto;
 		min-height: 100vh;	
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 
 	}
 
 	&__img {
-		width: 48.8%;
+		width: 50%;
 	}
 
 	@include padding-hack(99);
 
 	&__main {
-		width: 42.8%;
+		width: 50%;
 	}
 
 	&__title {
@@ -161,10 +157,6 @@ body {
 		font-weight: 300;
 		font-size: 17px;
 		line-height: 27px;
-		
-		&:not(:last-child) {
-			margin-bottom: 22px;
-		}
 	}
 
 }
@@ -246,24 +238,23 @@ body {
 		}
 	}
 
+	&__heading {
+		font-family: 'Raleway',sans-serif;
+		font-weight: 700;
+		font-size: 90px;
+		color:white;
+		position: absolute;
+		z-index: 5;
+		width: 116%;
+		right:0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
 
 	&__main-img {
 		width: 44%;
 		position: relative;
-		&:before {
-			content: 'Our Services';
-			font-family: 'Raleway',sans-serif;
-			font-weight: 700;
-			font-size: 90px;
-			color:white;
-			position: absolute;
-			z-index: 5;
-			width: 116%;
-			right:0;
-			top: 50%;
-			transform: translateY(-50%);
-
-		}
 	}
 
 	@include padding-hack(114);
@@ -645,6 +636,10 @@ position: relative;
 .footer {
 	background-color: #262626;
 
+	&__love {
+		color:#ff2b58;
+	}
+	
 	.container {
 		max-width:1170px;
 		width: 100%;
@@ -680,6 +675,8 @@ position: relative;
 
 @media all and (max-width: 576px) {
 	.first-screen {
+		background: none;
+		background-color: #fffcfc;
 
 		&__header {
 			flex-direction: column;
@@ -762,13 +759,16 @@ position: relative;
 			margin-bottom: 20px;
 		}
 
-		&__main-img::before {
+		&__heading {
 			font-size: 44px;
 			text-align: center;
 		}
 	}
 
 	.gallery {
+		&__grid {
+			width: 90%;
+		}
 		&__text {
 			width: 90%;
 			text-align: justify;
@@ -780,10 +780,12 @@ position: relative;
 	}
 
 	.subscribe {
+		background: none;
 		.container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			padding: 66px 0;
 		}
 
 		&__text {
@@ -953,13 +955,16 @@ position: relative;
 			margin-bottom: 20px;
 		}
 
-		&__main-img::before {
+		&__heading {
 			font-size: 44px;
 			text-align: center;
 		}
 	}
 
 	.gallery {
+		&__grid {
+			width: 90%;
+		}
 		&__text {
 			width: 60%;
 		}
@@ -1110,13 +1115,16 @@ position: relative;
 			
 		}
 
-		&__main-img::before {
+		&__heading {
 			// font-size: 44px;
 			text-align: center;
 		}
 	}
 
 	.gallery {
+		&__grid {
+			width: 90%;
+		}
 
 		&__link {
 			width: 40%;
