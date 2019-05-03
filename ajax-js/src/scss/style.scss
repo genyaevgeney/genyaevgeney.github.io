@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+
+.container {
+	max-width: 1077px;
+	width: 100%;
+	margin:auto;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+.corp {
+	border:14px solid #edeff0;
+	padding: 26px;
+
+	&__title {
+		font-weight: 500;
+		margin-bottom: 18px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__text {
+		width: 69.6%;
+	}
+
+	&__heading {
+		font-weight: 500;
+		margin-bottom: 12px;
+	}
+
+	&__article {
+		margin-bottom: 14px;
+		color: silver;
+	}
+
+	&__copyright {
+		color: silver;
+	}
+
+	&__employees {
+		width: 28.3%;
+	}
+
+	&__status {
+		font-weight: 500;
+	}
+}

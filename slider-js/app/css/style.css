@@ -315,8 +315,6 @@ body {
 	line-height: 90px;
 	color: #000;
 	text-transform: uppercase;
-}
-.section__text:last-of-type {
 	margin-bottom: 106px;
 }
 .section__slider {
