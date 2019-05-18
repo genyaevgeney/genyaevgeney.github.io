@@ -4,28 +4,31 @@
 	//= partials/head.html
 </head>
 <body>
-	<section class="first-screen">
+	<section class="first-screen" id="first-screen-section">
 		<div class="container">
 			<div class="first-screen__header">
 				<a href="#" class="first-screen__logo"></a>
-				<ul class="first-screen__nav">
-					<li class="first-screen__nav-item">
-						<a href="#" class="first-screen__item-link">HOME</a>
+				<ul class="first-screen__nav" id="cahee-nav">
+					<li class="first-screen__nav-icon">
+						<a href="javascript:void(0);" class="first-screen__item-link first-screen__item-menu">&#9776;</a>
 					</li>
 					<li class="first-screen__nav-item">
-						<a href="#" class="first-screen__item-link">ABOUT</a>
+						<a href="#first-screen-section" class="first-screen__item-link">HOME</a>
 					</li>
 					<li class="first-screen__nav-item">
-						<a href="#" class="first-screen__item-link">SERVICES</a>
+						<a href="#about-section" class="first-screen__item-link">ABOUT</a>
 					</li>
 					<li class="first-screen__nav-item">
-						<a href="#" class="first-screen__item-link">GALLERY</a>
+						<a href="#services-section" class="first-screen__item-link">SERVICES</a>
 					</li>
 					<li class="first-screen__nav-item">
-						<a href="#" class="first-screen__item-link">BLOG</a>
+						<a href="#gallery-section" class="first-screen__item-link">GALLERY</a>
 					</li>
 					<li class="first-screen__nav-item">
-						<a href="#" class="first-screen__item-link">CONTACT</a>
+						<a href="#blog-section" class="first-screen__item-link">BLOG</a>
+					</li>
+					<li class="first-screen__nav-item">
+						<a href="#contact-section" class="first-screen__item-link">CONTACT</a>
 					</li>
 				</ul>
 			</div>
@@ -37,7 +40,7 @@
 			<a href="#" class="first-screen__link-scroll"></a>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about-section">
 		<div class="container">
 			<div class="about__img">
 				<div class="padding-hack">
@@ -50,7 +53,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services-section">
 		<div class="container">
 			<ul class="services__list">
 				<li class="services__list-item">
@@ -74,7 +77,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="gallery">
+	<section class="gallery" id="gallery-section">
 		<div class="container">
 			<h2 class="gallery__title">Gallery</h2>
 			<p class="gallery__text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -104,7 +107,7 @@
 			<a href="#" class="gallery__link">VIEW MORE</a>
 		</div>
 	</section>
-	<section class="subscribe">
+	<section class="subscribe" id="subscribe-section">
 		<div class="container">
 			<h2 class="subscribe__title">Subscribe To Us</h2>
 			<p class="subscribe__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -115,7 +118,7 @@
 			</form>
 		</div>
 	</section>
-	<section class="blog">
+	<section class="blog" id="blog-section">
 		<div class="container">
 			<h2 class="blog__title">Blog</h2>
 			<p class="blog__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
@@ -142,14 +145,15 @@
 			<a href="#" class="blog__link">VIEW MORE</a>
 		</div>
 	</section>
-	<section class="contact">
+	<section class="contact" id="contact-section">
 		<div class="container">
 			<h2 class="contact__title">Contact</h2>
 			<p class="contact__text">For new projects, ideas, business or anything
 			you'd like to discuss, contact with me!</p>
 			<div class="contact__information">
 				<form action="#" class="contact__form">
-					<label class="contact__btn">Auskteez Tran</label>
+					<!-- <label class="contact__btn">Auskteez Tran</label> -->
+					<input class="input" type="text" placeholder="Your name..." required>
 					<input  class="contact__email input" type="email" placeholder="Your email..."
 					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
 					<input class="contact__tel input" type="tel" placeholder="Your phone number..." required>

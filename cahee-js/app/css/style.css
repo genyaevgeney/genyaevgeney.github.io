@@ -11,6 +11,10 @@ body {
 	min-height: 100vh;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .first-screen {
 	background: url("../img/first-screen.jpg") no-repeat center;
 	position: relative;
@@ -49,6 +53,9 @@ body {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+}
+.first-screen__nav-icon {
+	display: none;
 }
 .first-screen__item-link {
 	font-family: "Raleway",sans-serif;
@@ -122,6 +129,7 @@ body {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	padding: 90px 0;
 }
 .about__img {
 	width: 50%;
@@ -697,6 +705,17 @@ body {
 	color: white;
 	width: 100%;
 }
+.contact .input:focus {
+	font-family: "Raleway",sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: white;
+	border-left: 5px solid #355b82;
+	padding: 16px 14px;
+	width: 100%;
+	background-color: rgba(0, 196, 196, .5);
+	margin-bottom: 14px;
+}
 .contact .input::-webkit-input-placeholder {
 	color: #caedf1;
 	font-weight: 300;
@@ -816,6 +835,11 @@ body {
 	}
 	.first-screen__nav-item {
 		text-align: center;
+		display: none;
+	}
+	.first-screen__nav-icon {
+		text-align: center;
+		display: inline-block;
 	}
 	.first-screen__main {
 		width: 100%;
@@ -883,6 +907,9 @@ body {
 		-ms-flex-direction: column;
 		    flex-direction: column;
 		padding: 30px 0 15px 0;
+	}
+	.services__text {
+		width: 90%;
 	}
 	.services__list {
 		width: 90%;
@@ -1006,6 +1033,18 @@ body {
 	.footer__author {
 		width: 90%;
 		text-align: center;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.first-screen__nav.responsive li {
+		display: inline;
+	}
+}
+
+@media all and (min-width: 578px) and (max-width: 1120px) {
+	.first-screen {
+		background-size: auto;
 	}
 }
 
