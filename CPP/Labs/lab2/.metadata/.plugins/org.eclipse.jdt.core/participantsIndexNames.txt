@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+G:\labs Java\lab2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1789091988.index
+\servletlb\src\main\resources

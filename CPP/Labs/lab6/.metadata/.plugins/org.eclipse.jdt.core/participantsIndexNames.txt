@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\University\Java\Labs\lab6\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2564318156.index
+\lab6\src\main\resources
+C:\University\Java\Labs\lab6\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1382080796.index
+\cdi\src\main\resources

@@ -1,0 +1,5 @@
+package jdbs.lb.domain;
+
+public class Phone {
+
+}
