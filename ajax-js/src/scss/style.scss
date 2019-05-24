@@ -50,5 +50,68 @@
 
 	&__status {
 		font-weight: 500;
+		margin-bottom: 10px;
 	}
+
+	&__btn {
+		width:65%;
+		border: none;
+		border-radius: 3px;
+		background-color: lightgreen;
+		color:white;
+		padding: 10px 6px;
+		font-size: 17px;
+	}
+
+	&__empList {
+		list-style: none;
+
+		li {
+			display: flex;
+			align-items: center;
+		}
+
+		li:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		.out + .name {
+			color:silver;
+		}
+
+		.name {
+			font-size: 17px;
+		}
+
+		.in, .out {
+			width: 10%;
+			padding:2px 0;
+			border-radius: 2px;
+			margin-right: 12px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&:before {
+				color: white;
+				font-size: 8px;
+				font-weight:bold;
+			}
+		}
+
+		.in {
+			&:before {
+				content: 'IN';
+			}
+			background-color: lightgreen;
+		}
+
+		.out {
+			&:before {
+				content: 'OUT';
+			}
+			background-color: red;
+		}
+	}
+
+
 }

@@ -1,31 +1,31 @@
-// ;(function(){
-//   "use strict";
+const BTN = document.getElementById('load');
+const LIST = document.getElementById("employeeList");
+let xhr = new XMLHttpRequest();
 
-// let xhr = new XMLHttpRequest();
+BTN.addEventListener("click",sendAJAX);
+xhr.onreadystatechange = function () {
+	if(xhr.readyState === 4){
+		let respone = JSON.parse(xhr.responseText);
+		let employeeList = respone['employees'];
 
-// xhr.open('GET', 'employees.json', false);
+		employeeList.forEach(function(employee) {
+			let item = document.createElement('li');
+			let name = document.createElement('span');
+			name.classList.add("name");
+			let icon = document.createElement('span');
+			item.appendChild(icon);
+			item.appendChild(name);
+			name.innerText = employee.name;
+			if(employee.inoffice) icon.classList.add("in");
+			else icon.classList.add("out");
+			LIST.appendChild(item);
+		});
+	}
+}
 
-// xhr.send();
+xhr.open('GET','http://my-json-server.typicode.com/genyaevgeney/fakeserver/db', true);
 
-// if (xhr.status != 200) {
-//   alert( xhr.status + ': ' + xhr.statusText );
-// } else {
-//   alert( xhr.responseText );
-// }
-
-var xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function () {
-			if(xhr.readyState === 4){
-				document.getElementById("employeeList").innerHTML = xhr.responseText;
-			}
-		}
-
-		xhr.open('GET', 'employees.json', false);
-		function sendAJAX (){
-			xhr.send();
-			document.getElementById('load').style.display = "none";
-		}
-
-		
-
-// })();
+function sendAJAX (){
+	xhr.send();
+	BTN.style.display = "none";
+}
