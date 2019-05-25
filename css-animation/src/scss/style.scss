@@ -1,0 +1,51 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #543329;
+}
+
+.card {
+	width: 260px;
+	height: 380px;
+	position: relative;
+	perspective:700px;
+
+	&>* {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		transform-style:preserve-3d;
+		transition:transform 1s ease-out;
+	}
+
+	.front{
+		background: url("../img/front.jpg") no-repeat;
+		background-size: cover;
+		backface-visibility:hidden;
+
+	}
+	.back{
+		background: url("../img/back.jpg") no-repeat;
+		transform:rotateY(180deg);
+		backface-visibility:hidden;
+	}
+
+	&:hover{
+		.front{
+			transform:rotateY(-180deg);
+		}
+		.back{
+			transform:rotateY(0deg);
+		}
+	}
+}
+
