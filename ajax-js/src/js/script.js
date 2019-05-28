@@ -1,5 +1,6 @@
 const BTN = document.getElementById('load');
 const LIST = document.getElementById("employeeList");
+const HEADING = document.querySelector(".corp__heading");
 let xhr = new XMLHttpRequest();
 
 BTN.addEventListener("click",sendAJAX);
@@ -23,9 +24,16 @@ xhr.onreadystatechange = function () {
 	}
 }
 
-xhr.open('GET','http://my-json-server.typicode.com/genyaevgeney/fakeserver/db', true);
+xhr.open('GET','https://my-json-server.typicode.com/genyaevgeney/fakeserver/db', true);
 
 function sendAJAX (){
+	let db = document.createElement('a');
+	db.setAttribute('href', 'https://my-json-server.typicode.com/genyaevgeney/fakeserver/db');
+	db.innerText = "Database link";
+	db.style.marginLeft = "50px";
+	db.style.textDecoration = "none";
+	db.style.color = "lightgreen";
+	HEADING.appendChild(db);
 	xhr.send();
 	BTN.style.display = "none";
 }
