@@ -267,7 +267,9 @@ li {
 
 .page-menu li {
     &:not(:last-child):not(.page-menu__logo) a:hover {
-        background-color:darken($contrast-color, 10%);
+        @media all and (min-width: 425px) {
+            background-color:darken($contrast-color, 10%);
+        }      
         // color:$main-color;
         // color:$contrast-color;
     }
@@ -278,9 +280,19 @@ li {
         font-family: "Sprite-Graffiti",sans-serif;
         font-size: 50px;   
         // font-weight: 500;
+
+
+        @media all and (max-width: 523px) {
+            font-size: 32px; 
+        }
+
+        @media all and (max-width: 423px) {
+            font-size: 29px; 
+        }
+
     }
 }
- 
+
 
 .page-menu li {
     &:not(:last-child) a {
@@ -294,15 +306,71 @@ li {
 
     &:nth-child(8) {
         position: absolute;
-        left: 50%;
+
+        
+
+        @media all and (max-width: 332px) {
+            display: flex;
+            justify-content: space-between;
+            width:67%;
+
+            &>* {
+                margin-right: 0;
+            }
+        }
+
+        @media all and (min-width: 320px) {
+            bottom: 10%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 425px) {
+            bottom: 10%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 768px) {
+            bottom: 10%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 1440px) {
+            bottom: 0;
+            left: 50%;
+        }
+
         transform: translateX(-50%) translateY(50%);
-        bottom: 0;
+
     }
 
     &:nth-child(4) {
         position: absolute;
-        top: 50%;
-        left: 50%;
+
+        @media all and (min-width: 320px) {
+            top: 50%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 425px) {
+            top: 50%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 768px) {
+            top: 50%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 1024px) {
+            top: 50%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 1440px) {
+            top: 50%;
+            left: 50%;
+        }
+
         transform: translateX(-50%) translateY(-50%);
 
         a {
@@ -313,15 +381,27 @@ li {
             // font-family: "Marske",sans-serif;
             // font-family: "Marske",sans-serif;
 
+
+            @media all and (max-width: 523px) {
+                font-size: 66px;
+            }
+
+            @media all and (max-width: 423px) {
+                font-size: 50px;
+            }
+
             .page-menu__space {
                 margin-left: 21px;
             }
 
-            &:hover {
-                font-size: 98px;
-                letter-spacing: -2px;
-                font-family: "Sprite-Graffiti",sans-serif;
+            @media all and (min-width: 523px) {
+                &:hover {
+                    font-size: 98px;
+                    letter-spacing: -2px;
+                    font-family: "Sprite-Graffiti",sans-serif;
+                }
             }
+            
         }
 
 
@@ -329,45 +409,186 @@ li {
 
     &:nth-child(7) {
         position: absolute;
-        top: 68%;
-        left: 59%;
+
+        @media all and (min-width: 320px) {
+            top: 65%;
+            left: 70%;
+        }
+
+        @media all and (min-width: 425px) {
+            top: 65%;
+            left: 70%;
+        }
+
+        @media all and (min-width: 768px) {
+            top: 68%;
+            left: 82%;
+        }
+
+        @media all and (min-width: 1024px) {
+            top: 68%;
+            left: 62%;
+        }
+
+        @media all and (min-width: 1440px) {
+            top: 72%;
+            left: 59%;
+        }
+
         transform: translateX(-50%) translateY(-50%);
     }
 
     &:nth-child(6) {
         position: absolute;
-        top: 68%;
-        left: 41%;
+
+        @media all and (min-width: 320px) {
+            top: 65%;
+            left: 30%;
+        }
+
+        @media all and (min-width: 425px) {
+            top: 65%;
+            left: 30%;
+        }
+
+        @media all and (min-width: 768px) {
+            top: 68%;
+            left: 18%;
+        }
+
+        @media all and (min-width: 1024px) {
+            top: 68%;
+            left: 38%;
+        }
+
+        @media all and (min-width: 1440px) {
+            top: 72%;
+            left: 41%;
+        }
+
         transform: translateX(-50%) translateY(-50%);
     }
 
     &:nth-child(5) {
         position: absolute;
-        top: 32%;
-        left: 59%;
+
+        @media all and (min-width: 320px) {
+            top: 23%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 425px) {
+            top: 23%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 768px) {
+            top: 32%;
+            left: 82%;
+        }
+
+        @media all and (min-width: 1024px) {
+            top: 32%;
+            left: 59%;
+        }
+        @media all and (min-width: 1440px) {
+            top: 28%;
+            left: 59%;
+        }
+
         transform: translateX(-50%) translateY(-50%);
     }
 
     &:nth-child(3) {
         position: absolute;
-        top: 32%;
-        left: 41%;
+
+        @media all and (min-width: 320px) {
+            top: 35%;
+            left: 30%;
+        }
+
+        @media all and (min-width: 425px) {
+            top: 35%;
+            left: 30%;
+        }
+
+        @media all and (min-width: 768px) {
+            top: 32%;
+            left: 18%;
+        }
+
+        @media all and (min-width: 1024px) {
+            top: 32%;
+            left: 41%;
+        }
+
+        @media all and (min-width: 1440px) {
+            top: 28%;
+            left: 41%;
+        }
+
         transform: translateX(-50%) translateY(-50%);
     }
 
     &:nth-child(2) {
         position: absolute;
-        top: 50%;
-        left: 32%;
+
+        @media all and (min-width: 320px) {
+            top: 35%;
+            left: 70%;
+        }
+
+        @media all and (min-width: 425px) {
+            top: 35%;
+            left: 70%;
+        }
+
+        @media all and (min-width: 768px) {
+            top: 32%;
+            left: 50%;
+        }
+
+        @media all and (min-width: 1024px) {
+            top: 50%;
+            left: 13%;
+        }
+
+        @media all and (min-width: 1440px) {
+            top: 50%;
+            left: 22%;
+        }
         transform: translateX(-50%) translateY(-50%);
     }
 
     &:nth-child(1) {
         position: absolute;
+
+        @media all and (min-width: 320px) {
+         top: 77%;
+         left: 50%;
+     }
+
+     @media all and (min-width: 425px) {
+         top: 77%;
+         left: 50%;
+     }
+
+     @media all and (min-width: 768px) {
+         top: 68%;
+         left: 50%;
+     }
+
+     @media all and (min-width: 1024px) {
+         top: 50%;
+         left: 87%;
+     }
+
+     @media all and (min-width: 1440px) {
         top: 50%;
-        left: 68%;
-        transform: translateX(-50%) translateY(-50%);
+        left: 78%;
     }
+    transform: translateX(-50%) translateY(-50%);
+}
 }
 
 .page-menu li:last-child {
@@ -405,7 +626,12 @@ li {
 // }
 
 .social a {
+
     margin-right: 24px;
+
+    @media all and (max-width: 768px) and (min-width: 425px) {
+        margin-right: 39px;
+    }
 }
 
 .social a:hover img {

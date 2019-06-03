@@ -64,17 +64,12 @@ $yellow-color:#FFFF01;
   src: url('../fonts/Centar-Sans/XXII Centar Regular Italic/XXIICentarRegularIt.otf')  format('opentype'); /* Safari, Android, iOS */
 }
 
-@font-face {
+@font-face { //
   font-family: 'Uni-Sans-Heavy';
   src: url('../fonts/Uni-Sans/Uni-Sans-Heavy.otf')  format('opentype'); /* Safari, Android, iOS */
 }
 
-@font-face {
-  font-family: 'Uni-Sans-Heavy';
-  src: url('../fonts/Uni-Sans/Uni-Sans-Heavy.otf')  format('opentype'); /* Safari, Android, iOS */
-}
-
-@font-face {
+@font-face {//
   font-family: 'Uni-Sans-Heavy-Italic';
   src: url('../fonts/Uni-Sans/Uni-Sans-Heavy-Italic.otf')  format('opentype'); /* Safari, Android, iOS */
 }
@@ -89,12 +84,12 @@ $yellow-color:#FFFF01;
   src: url('../fonts/Uni-Sans/Uni-Sans-Thin-Italic.otf')  format('opentype'); /* Safari, Android, iOS */
 }
 
-@font-face {
+@font-face {//
   font-family: 'Rounds-Black';
   src: url('../fonts/Rounds-Black/Rounds-Black.otf')  format('opentype'); /* Safari, Android, iOS */
 }
 
-@font-face {
+@font-face {//
   font-family: 'Marske';
   src: url('../fonts/Marske/Marske.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
@@ -119,7 +114,7 @@ $yellow-color:#FFFF01;
   src: url('../fonts/Schist/Schist-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
-@font-face {
+@font-face { ///
   font-family: 'Sprite-Graffiti';
   src: url('../fonts/Sprite-Graffiti/Sprite-Graffiti.otf')  format('opentype'); /* Safari, Android, iOS */
 }
@@ -189,7 +184,7 @@ $yellow-color:#FFFF01;
   src: url('../fonts/Steelfish/steelfish-rg.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
-@font-face {
+@font-face {//
   font-family: 'HelveticaBlack';
   src: url('../fonts/Helvetica/HelveticaBlack/HelveticaBlack.eot'), /* IE9 Compat Modes */
        url('../fonts/Helvetica/HelveticaBlack/HelveticaBlack.woff') format('woff'), /* Pretty Modern Browsers */
