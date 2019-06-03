@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Title</title>
+	<link rel="shortcut icon" type="image/x-icon" href="fav/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+<header>
+	<div class="nav-icon float-right">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</header>
+
+<!-- Full Menu -->
+<div class="full-menu">
+	<div class="fullmenu-content">
+		<ul class="page-menu">
+			<li><a class="active" href="www.google.com">Новини</a></li>
+			<li><a href="">Музика</a></li>
+			<li><a href="">Відео</a></li>
+			<li  class="page-menu__logo"><a href="">Стороннiм<span class="page-menu__space">В.</span></a></li>
+			<li><a href="">Гурт</a></li>
+			<li><a href="">Галерея</a></li>
+			<li><a href="#">Контакти</a></li> 
+			<li class="social">
+				<a href="#"><img src="img/icons/social/facebook.svg" alt=""></a>
+				<a href="#"><img src="img/icons/social/youtube.svg" alt=""></a>
+				<a href="#"><img src="img/icons/social/instagram.svg" alt=""></a>
+				<a href="#"><img src="img/icons/social/twitter.svg" alt=""></a>
+			</li>
+		</ul>
+	</div>
+	<a href="#0" class="modal-close"></a>
+</div>
+<div class="cd-transition-layer visible opening"> 
+	<div class="bg-layer"></div>
+</div><!-- Ink Transition -->
+
+<!-- <div class="wrapper">
+
+	<section class="main">
+		<div class="main-content">
+			<span class="hello">Hello Everyone!</span>
+			<h1 class="main-title">I'm Adil Ahmed and Creative<br>
+			Interactive Developer & UX Designer.</h1>
+			<div class="social">
+				<a href="#"><img src="img/icons/social/twitter.svg" alt=""></a>
+				<a href="#"><img src="img/icons/social/instagram.svg" alt=""></a>
+				<a href="#"><img src="img/icons/social/dribbble.svg" alt=""></a>
+				<a href="#"><img src="img/icons/social/send.svg" alt=""></a>
+			</div>
+		</div>
+
+
+	</section>
+</div>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<!-- <div id="fullpage">
+	<section class="main-page section">
+		
+		<div id="canvas"></div>
+		<div id="fullwidth-image">
+			<img data-sampler="displacedImage" src="img/star-wars-wallpaper-hd-1080p.jpg" />
+		</div>
+
+	</section>
+	<div class="section">
+		section 2
+	</div>
+	<div class="section">
+		section 3
+	</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="main-page">
+	<header class="main-page__header">
+		<div class="container">
+			<nav class="main-page__nav">
+				<ul class="main-page__list">
+					<li class="main-page__list-item"><a class="main-page__item-link" href="">Новини</a></li>
+					<li class="main-page__list-item"><a class="main-page__item-link" href="">Музика</a></li>
+					<li class="main-page__list-item"><a class="main-page__item-link" href="">Відео</a></li>
+					<li class="main-page__list-item main-page__logo-wrap"><a class="main-page__logo" href="">Стороннім В.</a></li>
+					<li class="main-page__list-item"><a class="main-page__item-link" href="">Гурт</a></li>
+					<li class="main-page__list-item"><a class="main-page__item-link" href="">Галерея</a></li>
+					<li class="main-page__list-item"><a class="main-page__item-link" href="">Контакти</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</section> -->
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/fullpage.js"></script>
+	<script id="mouse-displacement-vs" type="x-shader/x-vertex">
+		#ifdef GL_ES
+		precision mediump float;
+		#endif
+
+		// default mandatory variables
+		attribute vec3 aVertexPosition;
+		attribute vec2 aTextureCoord;
+
+		uniform mat4 uMVMatrix;
+		uniform mat4 uPMatrix;
+
+		// custom variables
+		varying vec3 vVertexPosition;
+		varying vec2 vTextureCoord;
+
+		varying vec2 vDistortionEffect;
+
+		// custom uniforms
+		uniform vec2 uMousePosition;
+
+		void main() {
+		vec3 vertexPosition = aVertexPosition;
+
+		gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
+
+		// varyings
+		vTextureCoord = aTextureCoord;
+		vVertexPosition = vertexPosition;
+
+		vDistortionEffect = uMousePosition - vec2(vertexPosition.x, vertexPosition.y);
+	}
+</script>
+<script id="mouse-displacement-fs" type="x-shader/x-fragment">
+	#ifdef GL_ES
+	precision mediump float;
+	#endif
+
+	varying vec2 vTextureCoord;
+	varying vec2 vDistortionEffect;
+
+	// custom uniforms
+	uniform float uDisplacementStrength;
+
+	// our textures samplers
+	uniform sampler2D displacedImage;
+	uniform sampler2D canvasTexture;
+
+	void main( void ) {
+	// our texture coords
+	vec2 textureCoords = vTextureCoord;
+
+	// get our canvas texture
+	vec4 mouseEffect = texture2D(canvasTexture, textureCoords);
+
+	// apply displacement to the texture coords based on our canvas texture RGB
+	textureCoords  = textureCoords + mouseEffect .r * vDistortionEffect * (uDisplacementStrength / 10.0);
+
+	// get our image texture
+	vec4 finalColor = texture2D(displacedImage, textureCoords);
+
+	// get a B&W version of our image texture
+	vec4 finalBW = vec4(1.0);
+	finalBW.rgb = vec3(finalColor.r * 0.3 + finalColor.g * 0.59 + finalColor.b * 0.11);
+
+	// mix both texture based on our canvas texture
+	finalColor = mix(finalColor, finalBW, mouseEffect.r);
+
+	// that's all folks!
+	gl_FragColor = finalColor;
+}
+</script>
+<script src='https://cdn.rawgit.com/martinlaxenaire/curtainsjs/master/build/curtains.min.js'></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+ 
+ <script>
+ 'use strict'; 
+
+$(document).ready( function() {
+ 
+	
+
+    var width = 100,
+        perfData = window.performance.timing, 
+        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+        time = ((EstimatedTime/1000)%50) * 100
+
+
+    // Percentage Increment Animation
+    var PercentageID = $(".percentage"),
+            start = 0,
+            end = 100,
+            durataion = time;
+            animateValue(PercentageID, start, end, durataion);
+
+    function animateValue(id, start, end, duration) {
+
+        var range = end - start,
+          current = start,
+          increment = end > start? 1 : -1,
+          stepTime = Math.abs(Math.floor(duration / range)),
+          obj = $(id);
+
+
+        var timer = setInterval(function() {
+            current += increment;
+            $(obj).text(current);
+          //obj.innerHTML = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+    
+
+    
+	setTimeout(function(){
+        $('.preloader').fadeOut();
+        
+        $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
+            $(this).removeClass("visible closing opening").dequeue();
+        });
+        
+	}, time);
+		
+    
+
+
+   // FADE OUT EFFECT WHEN CLICK A LINK
+    $(document).on("click", "a:not(.lightbox)", function () {
+        var newUrl = $(this).attr("href");
+        if (!newUrl || newUrl[0] === "#") {
+            location.hash = newUrl;
+            return;
+        }
+        $("html").fadeOut(function () {
+            location = newUrl;
+        });
+        return false;
+    });
+    
+
+    var paget = $(".page-title .title").text();
+
+    $( ".page-title").append("<span></span>");
+    $( ".page-title span").append(paget);
+
+
+    
+    //posts page hover 
+    $('.blog-post .blog-link').hover(function(){
+        $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
+        $(this).parent('.blog-post').toggleClass('mousef');
+    });
+ 
+});  
+
+
+
+
+$(window).load( function() {
+ 
+
+function smokeeffect () { 
+    var modalTrigger = $('.nav-icon'),
+        transitionLayer = $('.cd-transition-layer'),
+        transitionBackground = transitionLayer.children(),
+        modalWindow = $('.full-menu');
+
+    var frameProportion = 1.78, //png frame aspect ratio
+        frames = 25, //number of png frames
+        resize = false;
+
+    //set transitionBackground dimentions
+    setLayerDimensions();
+    $(window).on('resize', function(){
+        if( !resize ) {
+            resize = true;
+            (!window.requestAnimationFrame) ? setTimeout(setLayerDimensions, 300) : window.requestAnimationFrame(setLayerDimensions);
+        }
+    });
+
+    //open modal window
+    modalTrigger.on('click', function(event){   
+        event.preventDefault();
+        transitionLayer.addClass('visible opening');
+        var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
+        setTimeout(function(){
+            modalWindow.addClass('visible');
+        }, delay);
+    });
+
+    //close modal window
+    modalWindow.on('click', '.modal-close', function(event){
+        event.preventDefault();
+        transitionLayer.addClass('closing');
+        modalWindow.removeClass('visible');
+        transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+            transitionLayer.removeClass('closing opening visible');
+            transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+        });
+    });
+
+    function setLayerDimensions() {
+        var windowWidth = $(window).width(),
+            windowHeight = $(window).height(),
+            layerHeight, layerWidth;
+
+        if( windowWidth/windowHeight > frameProportion ) {
+            layerWidth = windowWidth;
+            layerHeight = layerWidth/frameProportion;
+        } else {
+            layerHeight = windowHeight*1.2;
+            layerWidth = layerHeight*frameProportion;
+        }
+
+        transitionBackground.css({
+            'width': layerWidth*frames+'px',
+            'height': layerHeight+'px',
+        });
+
+        resize = false;
+    }
+
+}
+smokeeffect()
+
+ 
+    
+/*--------------------------------------------------
+ Hero Section Height
+---------------------------------------------------*/	
+     function homeh() {
+        var hometext = $('.main')
+
+        hometext.css({
+            "height": $(window).height() + "px"
+        });
+    }
+    homeh();
+    $(window).resize(homeh);
+
+
+    $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
+
+    $('.nav-icon').on("click", function(){
+            $(this).toggleClass('modal-close');
+    });
+ 
+ 
+     
+}); // document load end 
+
+
+
+
+  
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
