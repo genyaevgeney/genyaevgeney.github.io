@@ -6,39 +6,271 @@
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+window.addEventListener('resize',function(e){
+
+    if(window.innerWidth >= 603 && window.innerWidth <= 992) {
+        let navMenuHeight = document.querySelector('.nav-menu').offsetHeight;
+        let topLineNav = document.querySelector('.topLineNav');
+        let bottomLineNav = document.querySelector('.bottomLineNav');
+        let navVertical = document.querySelector('#fp-nav');
+        let screenHeight = document.body.clientHeight;
+        let navHeight = navVertical.offsetHeight;
+        let lineNavHeight = screenHeight/2 - navHeight/2;
+        topLineNav.style.height = `${lineNavHeight - navMenuHeight - (navHeight*1.3 - navHeight) -20}px`;
+        topLineNav.style.bottom = `${navHeight*1.3}px`;
+        bottomLineNav.style.height = `${lineNavHeight}px`;
+        bottomLineNav.style.top = `${navHeight*1.3}px`;
+                // console.dir(headerHeight.offsetHeight);
+            }
+            if(window.innerWidth > 992) {
+                let topLineNav = document.querySelector('.topLineNav');
+                let bottomLineNav = document.querySelector('.bottomLineNav');
+                // let navVertical = document.querySelector('#fp-nav');
+                // let screenHeight = document.body.clientHeight;
+                // let navHeight = navVertical.offsetHeight;
+                // let lineNavHeight = screenHeight/2 - navHeight/2;
+                topLineNav.style.height = "113px";
+                // topLineNav.style.bottom = `${navHeight*1.3}px`;
+                bottomLineNav.style.height = "113px";
+                // bottomLineNav.style.top = `${navHeight*1.3}px`;
+            }
+            // console.log("test");
+        })
+
 $(document).ready(function() {
     $('#fullpage').fullpage({
         //options here
         licenseKey: 'oobwH@p8',
-        autoScrolling:true,
-        scrollHorizontally: true,
-        sectionsColor: ['black','#F7C101','#201B2D'],
-        // anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+        verticalCentered:false,
+        recordHistory:false,
+        sectionsColor: ['black', '#201B2D', '#201B2D', '#201B2D', '#201B2D', '#201B2D'],
+        anchors: ['welcome', 'about', 'news', 'music', 'video', 'gallery', 'contact'],
+        menu: '#menu',
+        // scrollOverflow:true, 
+        // normalScrollElements:'.main-page',
+        // bigSectionsDestination:'bottom',
+        // fixedElements:
+        // loopTop:true,
+        // loopBottom:true,
+        // autoScrolling:false,
+        // fitToSection:false,
+        // fitToSectionDelay:2000,
+        // scrollHorizontally: true,
+        // sectionsColor: ['black','#F7C101','#201B2D'],
+        // lockAnchors: true,
         // scrollingSpeed:900,
         navigation: true,
-        normalScrollElements: '.main-page',
+        // normalScrollElements: '.main-page',
         navigationPosition: "right",
-        sectionSelector: '.section',
-        fixedElements: '#myMenu',
+        // sectionSelector: '.section',
+        // fixedElements: '#myMenu',
         afterRender: function(){
+
+
+
+
             var pluginContainer = this;
-            //Боковые линии от навигации
-            let topLineNav = document.createElement('span');
-            topLineNav.classList.add("topLineNav");
-            let bottomLineNav = document.createElement('span');
-            bottomLineNav.classList.add("bottomLineNav");
+            let welcomeSectionVideoWrapper = document.querySelector("#video");
+            let welcomeSectionVideo = welcomeSectionVideoWrapper.children[0].children[0];
+            welcomeSectionVideo.setAttribute('data-keepplaying','');
+            let welcomeSectionScrollDiv = document.querySelector(".StoronnimV-welcome-section__scroll-div");
+            welcomeSectionScrollDiv.addEventListener('click', fullpage_api.moveSectionDown);
+
+
+
+
+
+
+
+
+            // Боковые линии от навигации
+            if(window.innerWidth >= 603 && window.innerWidth <= 992) {
+                let navMenuHeight = document.querySelector('.nav-menu').offsetHeight;
+                let topLineNav = document.createElement('span');
+                topLineNav.classList.add("topLineNav");
+                let bottomLineNav = document.createElement('span');
+                bottomLineNav.classList.add("bottomLineNav");
+                let navVertical = document.querySelector('#fp-nav');
+                navVertical.appendChild(topLineNav);
+                navVertical.appendChild(bottomLineNav);
+                let screenHeight = document.body.clientHeight;
+                let navHeight = navVertical.offsetHeight;
+                let lineNavHeight = screenHeight/2 - navHeight/2;
+                topLineNav.style.height = `${lineNavHeight - 101 - (navHeight*1.3 - navHeight) -20}px`;
+                topLineNav.style.bottom = `${navHeight*1.3}px`;
+                bottomLineNav.style.height = `${lineNavHeight}px`;
+                bottomLineNav.style.top = `${navHeight*1.3}px`;
+                // console.log(lineNavHeight - navMenuHeight - (navHeight*1.3 - navHeight) -20);
+                // console.dir(headerHeight.offsetHeight);
+            }
+            if(window.innerWidth > 992) {
+                let topLineNav = document.createElement('span');
+                topLineNav.classList.add("topLineNav");
+                let bottomLineNav = document.createElement('span');
+                bottomLineNav.classList.add("bottomLineNav");
+                let navVertical = document.querySelector('#fp-nav');
+                navVertical.appendChild(topLineNav);
+                navVertical.appendChild(bottomLineNav);
+                // let screenHeight = document.body.clientHeight;
+                let navHeight = navVertical.offsetHeight;
+                // let lineNavHeight = screenHeight/2 - navHeight/2;
+                // topLineNav.style.height = `${lineNavHeight}px`;
+                topLineNav.style.bottom = `${navHeight*1.3}px`;
+                // bottomLineNav.style.height = `${lineNavHeight}px`;
+                bottomLineNav.style.top = `${navHeight*1.3}px`;
+            }
+
+
+
+
+
+
+            // console.log(screenHeight);
+        },
+        onLeave: function(origin, destination, direction) {
+            let header = document.querySelector(".StoronnimV-header");
             let navVertical = document.querySelector('#fp-nav');
-            navVertical.appendChild(topLineNav);
-            navVertical.appendChild(bottomLineNav);
-            let screenHeight = document.body.clientHeight;
-            let navHeight = navVertical.offsetHeight;
-            let lineNavHeight = screenHeight/2 - navHeight/2;
-            topLineNav.style.height = `${lineNavHeight}px`;
-            topLineNav.style.bottom = `${navHeight*1.3}px`;
-            bottomLineNav.style.height = `${lineNavHeight}px`;
-            bottomLineNav.style.top = `${navHeight*1.3}px`;
-            console.log(navHeight);
+            let navMenu = document.querySelector('.nav-menu');
+            let linearListInHeader = document.querySelector('.StoronnimV-header__nav');
+
+            if(destination.index === 0 && origin.index === 1) {
+                linearListInHeader.style.transition = "opacity .2s ease";
+                navVertical.style.transition = "opacity .2s ease";
+                linearListInHeader.style.opacity = '0';
+                navVertical.style.opacity = '0';
+                setTimeout(function() {
+                    linearListInHeader.style.display = 'none';
+                    navVertical.style.display = 'none';
+                }, 200);
+            } 
+            // if(destination.index >= 2 && origin.index >= 1) {
+            //     header.style.transition = "opacity .2s ease";
+            //     navVertical.style.transition = "opacity .2s ease";
+            //     header.style.opacity = '0';
+            //     navVertical.style.opacity = '0';
+            //     setTimeout(function() {
+            //         linearListInHeader.style.display = 'none';
+            //         navVertical.style.display = 'none';
+            //     }, 200);
+            // }
+            // if(destination.index === 2) {
+            //     navMenu.style.display = "block";
+            // } 
+            // if(destination.index === 1) {
+            //     linearListInHeader.style.display = "block";
+            // } 
+            if(destination.index >= 2 && origin.index === 1) {
+                navMenu.style.display = "block";
+                linearListInHeader.style.transition = "opacity .2s ease";
+                linearListInHeader.style.opacity = '0';
+                setTimeout(function() {
+                    linearListInHeader.style.display = 'none';
+                }, 200);
+            }
+            if(destination.index === 1 && origin.index === 0) {
+                linearListInHeader.style.display = 'block';
+                navVertical.style.display = 'block';
+            }
+            if(destination.index === 1 && origin.index >= 2) {
+                navMenu.style.transition = "opacity .2s ease";
+                navMenu.style.opacity = '0';
+                linearListInHeader.style.display = "block";
+                setTimeout(function() {
+                    navMenu.style.display = 'none';
+                }, 200);
+
+
+            }
+            if(destination.index === 0 && origin.index >= 2) {
+                navMenu.style.transition = "opacity .2s ease";
+                navVertical.style.transition = "opacity .2s ease"; 
+                navMenu.style.opacity = '0';
+                navVertical.style.opacity = '0';
+                setTimeout(function() {
+                    navMenu.style.display = 'none';
+                    navVertical.style.display = 'none';
+                }, 200);
+
+            }
+            if(destination.index >= 2 && origin.index >= 2) {
+                navMenu.style.transition = "opacity .2s ease";
+                navMenu.style.opacity = '0';
+            }
+        },
+        afterLoad: function(origin, destination, direction){
+            let loadedSection = this;
+            let header = document.querySelector(".StoronnimV-header");
+            let navVertical = document.querySelector('#fp-nav');
+            let navMenu = document.querySelector('.nav-menu');
+            let linearListInHeader = document.querySelector('.StoronnimV-header__nav');
+
+        //использование индекса
+        if(destination.index >= 2 && origin.index === 0){
+            linearListInHeader.style.opacity = '0';
+            linearListInHeader.style.display = 'none';
+            navMenu.style.opacity = '1';
+            navMenu.style.display = 'block';
+
         }
+        if(destination.index === 0 && origin === null){
+            linearListInHeader.style.opacity = '0';
+            navVertical.style.opacity = '0';
+            setTimeout(function() {
+                linearListInHeader.style.display = 'none';
+                navVertical.style.display = 'none';
+            }, 1000);
+        }
+        if(destination.index === 1 && origin.index === 0) {
+            linearListInHeader.style.transition = "opacity 1.5s ease";
+            navVertical.style.transition = "opacity 1.5s ease";
+            linearListInHeader.style.opacity = '1';
+            navVertical.style.opacity = '1';
+        } 
+        if(destination.index >= 2 && origin.index === 1) {
+            navMenu.style.transition = "opacity 1.5s ease";
+            navMenu.style.opacity = '1';
+
+        }
+        if(destination.index === 1 && origin.index >= 2) {
+            linearListInHeader.style.transition = "opacity 1.5s ease";
+            linearListInHeader.style.opacity = '1';
+
+        }
+        if(destination.index >= 2 && origin.index >= 2) {
+            navMenu.style.transition = "opacity 1.5s ease";
+            navMenu.style.opacity = '1';
+        }
+        // if(destination.index === 0 && origin.index === 2) {
+        //     linearListInHeader.style.transition = "opacity 1.5s ease";
+        //     linearListInHeader.style.opacity = '1';
+
+        // }
+        // if(destination.index === 2) {  
+        //     navMenu.style.opacity = "1";
+        //     linearListInHeader.style.opacity = "0";
+        //     setTimeout(function() { 
+        //         linearListInHeader.style.display = "none";
+        //     }, 1500); 
+        // } 
+        // if(destination.index === 1) {
+        //     console.log("load");  
+        //     linearListInHeader.style.opacity = "1";
+        //     navMenu.style.opacity = "0";
+        //     setTimeout(function() { 
+        //         navMenu.style.display = "none";
+        //     }, 2400); 
+        // }
+
+
+        //использование ссылки с привязкой
+        // if(origin.anchor == 'secondSlide'){
+        //     alert("Section 2 ended loading");
+        // }
+    },
         // navigationPosition: 'right', 
         // navigationTooltips: ['hi', 'there', 'my', 'friend'],
         // showActiveTooltip: true,
@@ -64,438 +296,6 @@ $(document).ready(function() {
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 //////////////////    ФУЛЛПЕЙДЖ (КОНЕЦ)     ////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-//////////////////    ЕФФЕКТ ПРИ ВОЖДЕНИИ МЫШИ (НАЧАЛО)     /////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-
-
-var params = {
-  webGLCanvasID: "canvas",
-  planeElementID: "fullwidth-image",
-  
-  // TWEAK THOSE VALUES TO CHANGE OVERALL EFFECT
-  
-  // size of the effect (0: no effect, 1: full window)
-  pointerSize: 0.25,
-  // how much to increase/decrease opacity on each frame
-  opacitySpeed: 0.0125,
-  // strength of the velocity of the mouse effect
-  velocityStrength: 0.25,
-  // the bigger the more displacement
-  displacementStrength: 0.25,
-  // does not change anything visually, but the smaller the scale the better the performance
-  canvasScale: 0.125, 
-};
-
-// look at window.onload on line 315
-
-// Constructor function
-function MouseEffect(params) {
-    // Init the effect
-    this.init(params);
-
-    return this;
-}
-
-/*
- * Init everything
- */
- MouseEffect.prototype.init = function(params) {
-
-    this.curtains = new Curtains(params.webGLCanvasID);
-
-    this.plane = null;
-
-    // get our plane element
-    this.planeElement = document.getElementById(params.planeElementID);
-
-    this.pixelRatio = this.curtains.pixelRatio || 1;
-
-    // mouse positions history
-    this.mouse = {
-        position: {
-            x: 0,
-            y: 0,
-        },
-        attributes: [],
-    };
-
-    // params
-    this.params = {
-        pointerSize: params.pointerSize || 0.25,
-        opacitySpeed: params.opacitySpeed || 0.0125,
-
-        velocityStrength: params.velocityStrength || 0.25,
-        displacementStrength: params.displacementStrength || 0.25,
-
-        canvasScale: params.canvasScale || 0.125,
-    };
-
-    this.canvas = null;
-    this.canvasContext = null;
-
-    if(
-        !document.getElementById(params.webGLCanvasID) ||
-        !document.getElementById(params.planeElementID)
-        ) {
-        console.warn("You must specify a valid ID for the WebGL canvas and the plane element");
-    return false;
-}
-
-}
-
-/*
- * Resize the mouse canvas
- */
- MouseEffect.prototype.resize = function() {
-
-    if(this.canvas && this.canvasContext) {
-        this.canvas.width = this.planeElement.clientWidth * this.pixelRatio * this.params.canvasScale;
-        this.canvas.height = this.planeElement.clientHeight * this.pixelRatio * this.params.canvasScale;
-
-        this.canvasContext.width = this.planeElement.clientWidth * this.pixelRatio * this.params.canvasScale;
-        this.canvasContext.height = this.planeElement.clientHeight * this.pixelRatio * this.params.canvasScale;
-
-        this.canvasContext.scale(this.pixelRatio * 1 / this.params.canvasScale, this.pixelRatio * 1 / this.params.canvasScale);
-        //this.mouse.canvasContext.imageSmoothingEnabled = true;
-    }
-
-}
-
-
-/*
- * Handle mouse/touch moves and push the positions into an array
- */
- MouseEffect.prototype.handleMovement = function(e) {
-
-    this.mouse.position.x = e.clientX;
-    this.mouse.position.y = e.clientY;
-
-    // touch event
-    if(e.targetTouches) {
-
-        this.mouse.position.x = e.targetTouches[0].clientX;
-        this.mouse.position.y = e.targetTouches[0].clientY;
-    }
-
-    // always check that the plane is still here
-    if(this.planeElement && this.plane) {
-        var mouseAttributes = {
-            x: this.mouse.position.x * Math.pow(this.params.canvasScale, 2),
-            y: this.mouse.position.y * Math.pow(this.params.canvasScale, 2),
-
-            scale: 0.05,
-            opacity: 1,
-            velocity: {
-                x: 0,
-                y: 0,
-            },
-        }
-
-        // keep tracks of the initial position of the mouse to calculate velocity
-        mouseAttributes.initialPosition = {
-            x: mouseAttributes.x,
-            y: mouseAttributes.y
-        }
-
-        // handle velocity based on past values
-        if(this.mouse.attributes.length > 0) {
-            mouseAttributes.velocity = {
-                x: Math.max(-this.params.canvasScale * 1.25, Math.min(this.params.canvasScale * 1.25, mouseAttributes.initialPosition.x - this.mouse.attributes[this.mouse.attributes.length - 1].initialPosition.x)),
-                y: Math.max(-this.params.canvasScale * 1.25, Math.min(this.params.canvasScale * 1.25, mouseAttributes.initialPosition.y - this.mouse.attributes[this.mouse.attributes.length - 1].initialPosition.y)),
-            };
-        }
-
-        // if this is our first mouse move, start drawing again
-        if(this.mouse.attributes.length == 0) {
-            this.curtains.enableDrawing();
-        }
-
-        // push our coords to our mouse coords array
-        this.mouse.attributes.push(mouseAttributes);
-
-        // convert our mouse/touch position to coordinates relative to the vertices of the plane
-        var mouseCoords = this.plane.mouseToPlaneCoords(this.mouse.position.x, this.mouse.position.y);
-        // update our mouse position uniform
-        this.plane.uniforms.mousePosition.value = [mouseCoords.x, mouseCoords.y];
-    }
-
-}
-
-
-/*
- * This draws a gradient circle based on mouse attributes positions
- */
- MouseEffect.prototype.drawGradientCircle = function(pointerSize, circleAttributes) {
-    this.canvasContext.beginPath();
-
-    var gradient = this.canvasContext.createRadialGradient(
-        circleAttributes.x, circleAttributes.y, 0,
-        circleAttributes.x, circleAttributes.y, pointerSize * circleAttributes.scale * this.params.canvasScale
-        );
-
-    // our gradient could go from opaque white to transparent white or from opaque white to transparent black
-    // it changes the effect a bit
-    gradient.addColorStop(0, 'rgba(255, 255, 255, ' + circleAttributes.opacity + ')');
-
-    // use another gradient stop if we want to add more transparency
-    //gradient.addColorStop(0.85, 'rgba(255, 255, 255, 0.05)');
-
-    gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
-
-    this.canvasContext.fillStyle = gradient;
-
-    this.canvasContext.arc(
-        circleAttributes.x, circleAttributes.y, pointerSize * circleAttributes.scale * this.params.canvasScale,
-        0, 2 * Math.PI, false
-        );
-    this.canvasContext.fill();
-    this.canvasContext.closePath();
-}
-
-
-/*
- * Drawing onto our canvas
- */
- MouseEffect.prototype.animateCanvas = function() {
-    // here we will handle our canvas texture animation
-    var pointerSize = window.innerWidth > window.innerHeight ?
-    Math.floor(this.canvas.height * this.params.pointerSize) :
-    Math.floor(this.canvas.width * this.params.pointerSize);
-
-    // clear scene
-    this.canvasContext.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
-    // draw a background black rectangle
-    this.canvasContext.beginPath();
-    this.canvasContext.fillStyle = "black";
-
-    this.canvasContext.rect(0, 0, this.canvas.width, this.canvas.height);
-    this.canvasContext.fill();
-    this.canvasContext.closePath();
-
-    // draw all our mouse coords
-    for(var i = 0; i < this.mouse.attributes.length; i++) {
-        this.drawGradientCircle(pointerSize, this.mouse.attributes[i]);
-    }
-}
-
-
-/*
- * Once the plane is ready we set the event listeners and handle the render loop
- */
- MouseEffect.prototype.handlePlane = function() {
-
-    var self = this;
-
-    self.plane.onReady(function() {
-
-        // on resize, update the resolution uniform
-        window.addEventListener("resize", self.resize.bind(self), false);
-
-        document.body.addEventListener("mousemove", self.handleMovement.bind(self), false);
-        document.body.addEventListener("touchmove", self.handleMovement.bind(self), {
-            passive: true
-        });
-
-        // for performance purpose, disable the drawing for now
-        self.curtains.disableDrawing();
-        // render the first frame only to display the picture
-        self.curtains.needRender();
-
-    }).onRender(function() {
-
-        for(var i = 0; i < self.mouse.attributes.length; i++) {
-            // decrease opacity
-            self.mouse.attributes[i].opacity -= self.params.opacitySpeed;
-
-            // apply velocity
-            self.mouse.attributes[i].x += self.mouse.attributes[i].velocity.x * self.params.velocityStrength;
-            self.mouse.attributes[i].y += self.mouse.attributes[i].velocity.y * self.params.velocityStrength;
-
-            // change scale
-            if(self.mouse.attributes[i].opacity >= 0.5) {
-                self.mouse.attributes[i].scale += (self.params.opacitySpeed * 2);
-            }
-            else {
-                self.mouse.attributes[i].scale -= self.params.opacitySpeed;
-            }
-
-            if(self.mouse.attributes[i].opacity <= 0) {
-                // if element is fully transparent, remove it
-                self.mouse.attributes.splice(i, 1);
-
-                // if this was our last mouse move, disable drawing again
-                if(self.mouse.attributes.length == 0) {
-                    self.curtains.disableDrawing();
-                }
-            }
-        }
-
-        // draw our mouse coords arrays
-        self.animateCanvas();
-    });
-
-}
-
-/*
- * If you want to remove the plane cleanly (like if you're navigating away of this page)
- */
- MouseEffect.prototype.removePlane = function() {
-    var self = this;
-
-    // remove all events
-    window.removeEventListener("resize", self.resize);
-    document.body.removeEventListener("mousemove", self.handleMovement);
-    document.body.removeEventListener("touchmove", self.handleMovement);
-
-    // remove the plane
-    self.curtains.removePlane(self.plane);
-
-    self.plane = null;
-
-    self.canvas = null;
-    self.canvasContext = null;
-}
-
-
-/*
- * Adds the plane and starts the effect
- */
- MouseEffect.prototype.addPlane = function() {
-
-    // parameters to apply to our WebGL plane
-    this.planeParams = {
-        vertexShaderID: "mouse-displacement-vs",
-        fragmentShaderID: "mouse-displacement-fs",
-        imageCover: true,
-        uniforms: {
-            mousePosition: {
-                name: "uMousePosition",
-                type: "2f",
-                value: [this.mouse.position.x, this.mouse.position.y],
-            },
-            mouseEffect: {
-                name: "uDisplacementStrength",
-                type: "1f",
-                value: this.params.displacementStrength,
-            },
-        },
-    };
-
-    // create our plane
-    this.plane = this.curtains.addPlane(this.planeElement, this.planeParams);
-
-    // if the plane was created successfully we can go on
-    if(this.plane) {
-        this.canvas = document.createElement("canvas");
-        this.canvas.setAttribute("data-sampler", "canvasTexture");
-        this.canvasContext = this.canvas.getContext("2d", { alpha: false });
-
-        // load our canvas texture
-        this.plane.loadCanvases([this.canvas]);
-
-        // first we resize our mouse canvas
-        this.resize();
-
-        // then we handle the plane
-        this.handlePlane();
-    }
-}
-
-
-window.onload = function() {
-    // init everything
-    var mouseEffect = new MouseEffect(params);
-
-    // if there's an error during the WebGL context creation
-    mouseEffect.curtains.onError(function() {
-        document.body.classList.add("no-webgl");
-    });
-
-    // add the plane to start the effect
-    mouseEffect.addPlane();
-}
-
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-//////////////////    ЕФФЕКТ ПРИ ВОЖДЕНИИ МЫШИ (КОНЕЦ)     /////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-//////    ЕФФЕКТ ПРИ НАВЕДЕНИИ НА ПУНКТЫ МЕНЮ В ХЕДЕРЕ (НАЧАЛО)  ////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-document.querySelectorAll('.main-page__list-item').forEach((elem) => {
-
-  elem.onmouseenter =
-  elem.onmouseleave = (e) => {
-
-    const tolerance = 5
-
-    const left = 0
-    const right = elem.clientWidth
-
-    let x = e.pageX - elem.offsetLeft
-
-    if (x - tolerance < left) x = left
-        if (x + tolerance > right) x = right
-
-            elem.style.setProperty('--x', `${ x }px`)
-
-    }
-
-    
-
-})
-
-
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-//////    ЕФФЕКТ ПРИ НАВЕДЕНИИ НА ПУНКТЫ МЕНЮ В ХЕДЕРЕ (КОНЕЦ)  ////////
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////

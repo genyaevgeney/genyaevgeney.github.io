@@ -1,24 +1,33 @@
-body {
-    font-family: 'Roboto Condensed', sans-serif;  
+// .testpage {
+//     min-width: 100wh;
+//     min-height: 100vh;
+//     background-color:black;
+// }
+
+.StoronnimV-header {
+    position: fixed;
+    width: 100%;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    z-index: 20;
+    // background-color: yellow;
 
-}
+    &__nav {
+        // transition: opacity 1.5s ease;
+    }
 
-
-.nav-up {
-    top: -40px;
-}
-
-
-li {
-    list-style: none;
-}
+    .nav-up {
+        top: -40px;
+    }
 
 
-/*------------------------ 2 Home ------------------------*/
+    li {
+        list-style: none;
+    }
+
+
+    /*------------------------ 2 Home ------------------------*/
 
 // .main {
 //     background: url("../img/ban.jpg") no-repeat;
@@ -96,8 +105,8 @@ li {
         /* 'X' icon */
         position: absolute;
         z-index: 1;
-        top: 0;
-        right: 0;
+        top: 20px;
+        right: 20px;
         padding: 42px;
         height: 45px;
         width: 45px;
@@ -564,26 +573,26 @@ li {
         position: absolute;
 
         @media all and (min-width: 320px) {
-         top: 77%;
-         left: 50%;
-     }
+           top: 77%;
+           left: 50%;
+       }
 
-     @media all and (min-width: 425px) {
-         top: 77%;
-         left: 50%;
-     }
+       @media all and (min-width: 425px) {
+           top: 77%;
+           left: 50%;
+       }
 
-     @media all and (min-width: 768px) {
-         top: 68%;
-         left: 50%;
-     }
+       @media all and (min-width: 768px) {
+           top: 68%;
+           left: 50%;
+       }
 
-     @media all and (min-width: 1024px) {
-         top: 50%;
-         left: 87%;
-     }
+       @media all and (min-width: 1024px) {
+           top: 50%;
+           left: 87%;
+       }
 
-     @media all and (min-width: 1440px) {
+       @media all and (min-width: 1440px) {
         top: 50%;
         left: 78%;
     }
@@ -646,13 +655,51 @@ li {
 
 
 
-header {
+.nav-menu {
     position: fixed;
     padding: 30px;
-    top: 0;
-    width: 100%;
+    top: 20px;
+    right: 20px;
+    width: 85px;
     z-index: 2;
-    background-color: rgba(silver, .7);
+    background-color: #FFFF01;
+    opacity: 0;
+    display: none;
+    // transition: opacity 2.4s ease;
+    // background-color: silver;
+    // opacity: .5;
+
+    // @media all and (min-width: 993px) {
+    //     display: none;
+    // }
+
+    @media all and (max-width: 993px) {
+        padding: 38px;
+        width: 101px;
+    }
+
+    @media all and (max-width: 603px) {
+       padding: 30px;
+       width: 85px;
+   }
+
+   @media all and (max-width: 530px) {
+       padding: 22px;
+       width: 69px;
+   }
+
+   @media all and (max-width: 361px) {
+       padding: 15px;
+       width: 55px;
+       top: 7px;
+       background-color: initial;
+   }
+
+
+
+
+
+
 }
 
 
@@ -665,18 +712,18 @@ header {
     cursor: pointer;
     margin-top: 7px;
 
-    &:before {
-        content: '';
-        position:absolute;
-        width:45px;
-        height: 45px;
-        background-color: $contrast-color;
-        border-radius: 50%;
-        top:-15.5px;
-        left: -10.5px;
-        // transform: translateY(-50%);
+    // &:before {
+    //     content: '';
+    //     position:absolute;
+    //     width:84px;
+    //     height: 84px;
+    //     background-color: $contrast-color;
+    //     border-radius: 50%;
+    //     top:-15.5px;
+    //     left: -10.5px;
+    //     // transform: translateY(-50%);
 
-    }
+    // }
 }
 
 .nav-icon span {
@@ -688,7 +735,7 @@ header {
     opacity: 1;    
     transform: rotate(0deg);   
     transition: .25s ease-in-out;
-    background-color:$main-color;
+    background-color:white;
 }
 
 .nav-icon span:nth-child(1) {
@@ -711,3 +758,175 @@ header {
 .nav-icon:hover span:nth-child(3) {
     width: 100%;
 }
+}
+
+
+
+
+// body {
+//     background-color:#201B2D;
+// }
+
+
+
+
+
+
+
+
+
+
+.StoronnimV-header {
+    // background-color: black;
+    opacity: .8;
+    // min-height: 100vh;
+    .container {
+        padding: 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:0;
+        padding: 10px 0;
+
+        
+
+        @media all and (max-width: 993px) {
+            justify-content: center;
+        }
+
+        @media all and (max-width: 703px) {
+          justify-content: flex-start;
+      }
+
+      > *:not(.StoronnimV-header__logo-wrap) {
+        @media all and (max-width: 993px) {
+            display: none;
+        }
+    }
+}
+
+&__item-link {
+    font-family: "Sprite-Graffiti",sans-serif;
+    font-size: 26px;
+    position: relative;
+    text-decoration: none;
+    color:#FFFF01;
+    transition: color .3s ease;
+    @media all and (max-width: 1200px) {
+        font-size: 21px;
+    }
+
+
+    &::after {
+        --scale: 0;
+
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: 3px;
+        background: $contrast-color;
+        transform: scaleX(var(--scale));
+        transform-origin: var(--x) 50%;
+        transition: transform .3s cubic-bezier(.535, .05, .355, 1);
+    }
+
+    &:hover {
+        color: darken($contrast-color, 10%);
+    }
+
+    &:hover::after {
+        --scale: 1;
+    }
+}
+
+&__logo-wrap {
+    margin: 0 31px;
+    @media all and (max-width: 1200px) {
+        margin: 0 28px;
+    }
+
+    @media all and (max-width: 993px) {
+        margin:0;
+    }
+
+    @media all and (max-width: 603px) {
+       padding-left: 32px;
+   }
+
+   @media all and (max-width: 410px) {
+       padding-left: 14px;
+   }
+
+   @media all and (max-width: 365px) {
+       padding-left: 7px;
+   }
+        // margin-top: -10px;
+        // margin-bottom: 7px;
+    }
+
+
+    &__logo {
+        font-family: "Sprite-Graffiti-Shadow",sans-serif;
+        font-size: 84px;
+        line-height: 1; 
+        color:#FFFF01;
+        transition: font .7s ease;
+        @media all and (max-width: 1200px) {
+           font-size: 81px;
+       }
+
+       @media all and (max-width: 603px) {
+           font-size: 65px;
+       }
+
+       @media all and (max-width: 530px) {
+           font-size: 48px;
+       }
+
+       @media all and (max-width: 352px) {
+           font-size: 41px;
+       }
+
+       .StoronnimV-header__space {
+        margin-left: 21px;
+    }
+
+    &:hover {
+     color:#FFFF01;  
+     font-size: 92px;
+     letter-spacing: -2px;
+     font-family: "Sprite-Graffiti",sans-serif;
+
+     @media all and (max-width: 1200px) {
+       font-size: 89px;
+   }
+}
+
+        // &::before {
+        //     content: "M";
+        //     font-family: "Deejay",sans-serif;
+        //     margin-right: 15px;
+        // }
+
+        // &::after {
+        //     content: "M";
+        //     font-family: "Deejay",sans-serif;
+        //     margin-left: 15px;
+        //     display: inline-block;
+        //     transform: rotateY(180deg);
+        // }
+    }
+
+
+
+}
+
+
+
+
+

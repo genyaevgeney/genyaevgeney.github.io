@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Title</title>
-	<link rel="shortcut icon" type="image/x-icon" href="fav/favicon.ico">
+	<title>Стороннім В</title>
+	<link rel="shortcut icon" type="image/x-icon" href="fav/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,99 +13,362 @@
 	
 </head>
 <body>
-<header>
-	<div class="nav-icon float-right">
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
-</header>
 
-<!-- Full Menu -->
-<div class="full-menu">
-	<div class="fullmenu-content">
-		<ul class="page-menu">
-			<li><a class="active" href="www.google.com">Новини</a></li>
-			<li><a href="">Музика</a></li>
-			<li><a href="">Відео</a></li>
-			<li  class="page-menu__logo"><a href="">Стороннiм<span class="page-menu__space">В.</span></a></li>
-			<li><a href="">Гурт</a></li>
-			<li><a href="">Галерея</a></li>
-			<li><a href="#">Контакти</a></li> 
-			<li class="social">
-				<a href="#"><img src="img/icons/social/facebook.svg" alt=""></a>
-				<a href="#"><img src="img/icons/social/youtube.svg" alt=""></a>
-				<a href="#"><img src="img/icons/social/instagram.svg" alt=""></a>
-				<a href="#"><img src="img/icons/social/twitter.svg" alt=""></a>
-			</li>
-		</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="preloader">
+	<div class="wrapper">
+		<div class="box-wrap">
+			<div class="box one"></div>
+			<div class="box two"></div>
+			<div class="box three"></div>
+			<div class="box four"></div>
+			<div class="box five"></div>
+			<div class="box six"></div>
+		</div>
 	</div>
-	<a href="#0" class="modal-close"></a>
 </div>
-<div class="cd-transition-layer visible opening"> 
-	<div class="bg-layer"></div>
-</div><!-- Ink Transition -->
+<div class="cursor"></div><header class="StoronnimV-header">
+	<div class="container">
+		<nav class="StoronnimV-header__nav">
+			<ul id="menu" class="StoronnimV-header__list">
+				<li data-menuanchor="news" class="StoronnimV-header__list-item"><a id="test" class="StoronnimV-header__item-link" href="#news">Новини</a></li>
+				<li data-menuanchor="music" class="StoronnimV-header__list-item"><a class="StoronnimV-header__item-link" href="#music">Музика</a></li>
+				<li data-menuanchor="video" class="StoronnimV-header__list-item"><a class="StoronnimV-header__item-link" href="#video">Вiдео</a></li>
+				<li data-menuanchor="welcome" class="StoronnimV-header__list-item StoronnimV-header__logo-wrap"><a class="StoronnimV-header__logo" href="#welcome">Стороннiм<span class="StoronnimV-header__space">В.</a></li>
+				<li data-menuanchor="about" class="StoronnimV-header__list-item"><a class="StoronnimV-header__item-link" href="#about">Гурт</a></li>
+				<li data-menuanchor="gallery" class="StoronnimV-header__list-item"><a class="StoronnimV-header__item-link" href="#gallery">Галерея</a></li>
+				<li data-menuanchor="contact" class="StoronnimV-header__list-item"><a class="StoronnimV-header__item-link" href="#contact">Контакти</a></li>
+			</ul>
+		</nav>
+	</div>
 
-<!-- <div class="wrapper">
 
-	<section class="main">
-		<div class="main-content">
-			<span class="hello">Hello Everyone!</span>
-			<h1 class="main-title">I'm Adil Ahmed and Creative<br>
-			Interactive Developer & UX Designer.</h1>
-			<div class="social">
-				<a href="#"><img src="img/icons/social/twitter.svg" alt=""></a>
-				<a href="#"><img src="img/icons/social/instagram.svg" alt=""></a>
-				<a href="#"><img src="img/icons/social/dribbble.svg" alt=""></a>
-				<a href="#"><img src="img/icons/social/send.svg" alt=""></a>
+
+	<div class="nav-menu">
+		<div class="nav-icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="full-menu">
+		<div class="fullmenu-content">
+			<ul class="page-menu">
+				<li data-menuanchor="news"><a class="StoronnimV-header__effect-menu-link" href="#news">Новини</a></li>
+				<li data-menuanchor="music"><a class="StoronnimV-header__effect-menu-link" href="#music">Музика</a></li>
+				<li data-menuanchor="video"><a class="StoronnimV-header__effect-menu-link" href="#video">Вiдео</a></li>
+				<li data-menuanchor="welcome" class="page-menu__logo"><a class="StoronnimV-header__effect-menu-link" href="#welcome">Стороннiм<span class="page-menu__space">В.</span></a></li>
+				<li data-menuanchor="about"><a class="StoronnimV-header__effect-menu-link" href="#about">Гурт</a></li>
+				<li data-menuanchor="gallery"><a class="StoronnimV-header__effect-menu-link" href="#gallery">Галерея</a></li>
+				<li data-menuanchor="contact"><a class="StoronnimV-header__effect-menu-link" href="#contact">Контакти</a></li> 
+				<li class="social">
+					<a target="_blank" href="https://www.facebook.com/%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D1%96%D0%BC-%D0%92-377358619512485/"><img src="img/icons/social/facebook.svg" alt=""></a>
+					<a target="_blank" href="https://www.youtube.com/"><img src="img/icons/social/youtube.svg" alt=""></a>
+					<a target="_blank" href="#"><img src="img/icons/social/instagram.svg" alt=""></a>
+					<a target="_blank" href="#"><img src="img/icons/social/twitter.svg" alt=""></a>
+				</li>
+			</ul>
+		</div>
+		<a href="#0" class="modal-close"></a>
+	</div>
+	<div class="cd-transition-layer visible opening"> 
+		<div class="bg-layer"></div>
+	</div>
+</header><!-- <div class="testpage">
+</div> -->
+
+
+
+
+
+
+
+<div id="fullpage">
+
+	<section class="section StoronnimV-welcome-section">
+		<div id="video" data-vide-bg="img/video/background">
+			<!-- <div class="StoronnimV-welcome-section__wrap-block"> -->
+				<a class="StoronnimV-welcome-section__logo" href="#welcome">Стороннiм<span class="StoronnimV-welcome-section__space-beetwen-logo">В.
+				</a>
+				<div class="StoronnimV-welcome-section__scroll-div"><span class="StoronnimV-welcome-section__scroll-text">Перейти далі</span></div>
+				<!-- </div> -->
+			</div>
+		</section>
+
+		<section class="main-page section StoronnimV-about-section">	
+			<div class="StoronnimV-about-section__overlay"></div>
+			<div id="canvas"></div>
+			<div id="fullwidth-image">
+				<img data-sampler="displacedImage" src="img/about.jpg" />
+				<div class="container">
+					<div class="row StoronnimV-about-section__row">
+						<div class="col-12 StoronnimV-about-section__head">
+							<p class="StoronnimV-about-section__heading">ПРО ГУРТ</p>
+						</div>
+						<div class="col-12 StoronnimV-about-section__fluid">
+							<p class="StoronnimV-about-section__name">СТОРОННІМ В</p>
+							<p class="StoronnimV-about-section__content">Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. Історія груту історія гурту учторія гурту. </p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+	<!-- 	<br>
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br> -->
+		Hi there
+	</section>
+	
+	<section class="section StoronnimV-news-section">
+		<!-- <a href="#" class="StoronnimV-news-section__more-news">Всі новини</a> -->
+		<!-- <p class="StoronnimV-news-section__section-name">НОВИНИ</p> -->
+		<div class="container">
+			<div class="row StoronnimV-news-section__news-wrap">
+				<div class="col-md-10 col-lg-6 StoronnimV-news-section__news">
+						<!-- <div class="padding-hack">
+							<img src="img/news1.jpg" alt="img" class="img">
+						</div>
+						<div class="StoronnimV-news-section__news-text-div"></div>
+						<div class="StoronnimV-news-section__news-date-div">
+							<span class="StoronnimV-news-section__month">ИЮН</span>
+							<span class="StoronnimV-news-section__day">12</span>
+						</div> -->
+						<div class="StoronnimV-news-section__news-content">
+							<div class="StoronnimV-news-section__text-div">
+								<div class="StoronnimV-news-section__wrap-main-text">
+									<a href="#" class="StoronnimV-news-section__heading">Названiе новости<!--  Названiе новостi Названiе новостi Названiе новостi Названiе новостi Названiе --></a>
+									<p class="StoronnimV-news-section__description">Дополнiтельний текст Дополнiтельний текст Дополнiтельний текст Дополнiтельний текст Дополнiтельний Дополнiтельний текстД ополнiтельний текст</p>
+								</div>
+								<div class="StoronnimV-news-section__news-footer">
+									<a href="#" class="StoronnimV-news-section__like">120</a>
+									<a href="#" class="StoronnimV-news-section__read-more">Дізнатися більше</a>
+								</div>
+							</div>
+						</div>
+						<div class="StoronnimV-news-section__news-date-div">
+							<span class="StoronnimV-news-section__month">ИЮН</span>
+							<span class="StoronnimV-news-section__day">12</span>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6 StoronnimV-news-section__news">
+						<div class="StoronnimV-news-section__news-content">
+							<div class="StoronnimV-news-section__text-div">
+								<div class="StoronnimV-news-section__wrap-main-text">
+									<a href="#" class="StoronnimV-news-section__heading">Названiе новости<!--  Названiе новостi Названiе новостi Названiе новостi Названiе новостi Названiе --></a>
+									<p class="StoronnimV-news-section__description">Дополнiтельний текст Дополнiтельний текст Дополнiтельний текст Дополнiтельний текст Дополнiтельний Дополнiтельний текстД ополнiтельний текст</p>
+								</div>
+								<div class="StoronnimV-news-section__news-footer">
+									<a href="#" class="StoronnimV-news-section__like">120</a>
+									<a href="#" class="StoronnimV-news-section__read-more">Дізнатися більше</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="StoronnimV-news-section__news-date-div">
+							<span class="StoronnimV-news-section__month">ИЮН</span>
+							<span class="StoronnimV-news-section__day">12</span>
+						</div>
+					</div>
+
+					<div class="col-md-10 col-lg-6 StoronnimV-news-section__news">
+						<div class="StoronnimV-news-section__news-content">
+							<div class="StoronnimV-news-section__text-div">
+								<div class="StoronnimV-news-section__wrap-main-text">
+									<a href="#" class="StoronnimV-news-section__heading">Названiе новости<!--  Названiе новостi Названiе новостi Названiе новостi Названiе новостi Названiе --></a>
+									<p class="StoronnimV-news-section__description">Дополнiтельний текст Дополнiтельний текст Дополнiтельний текст Дополнiтельний текст Дополнiтельний Дополнiтельний текстД ополнiтельний текст</p>
+								</div>
+								<div class="StoronnimV-news-section__news-footer">
+									<a href="#" class="StoronnimV-news-section__like">120</a>
+									<a href="#" class="StoronnimV-news-section__read-more">Дізнатися більше</a>
+								</div>
+							</div>
+						</div>
+						<div class="StoronnimV-news-section__news-date-div">
+							<span class="StoronnimV-news-section__month">ИЮН</span>
+							<span class="StoronnimV-news-section__day">12</span>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6 StoronnimV-news-section__news">
+						<div class="StoronnimV-news-section__news-content">
+							<div class="StoronnimV-news-section__text-div">
+								<div class="StoronnimV-news-section__wrap-main-text">
+									<a href="#" class="StoronnimV-news-section__heading">Названiе новости<!--  Названiе новостi Названiе новостi Названiе новостi Названiе новостi Названiе --></a>
+									<p class="StoronnimV-news-section__description">Дополнiтельний текст Дополнiтельний текст Дополнiтельний текст Дополнiтельний текст Дополнiтельний Дополнiтельний текстД ополнiтельний текст</p>
+								</div>
+								<div class="StoronnimV-news-section__news-footer">
+									<a href="#" class="StoronnimV-news-section__like">120</a>
+									<a href="#" class="StoronnimV-news-section__read-more">Дізнатися більше</a>
+								</div>
+							</div>
+						</div>
+						<div class="StoronnimV-news-section__news-date-div">
+							<span class="StoronnimV-news-section__month">ИЮН</span>
+							<span class="StoronnimV-news-section__day">12</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section StoronnimV-music-section">
+			<div class="container">
+				<div class="row StoronnimV-music-section__row">
+					<div class="col-lg-12 StoronnimV-music-section__col-head">
+						<div class="StoronnimV-music-section__heading">МУЗИКА</div>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-music-section__col">
+						<div class="StoronnimV-music-section__title">АЛЬБОМ АЛЬБОМ</div>
+						<div class="StoronnimV-music-section__date">ПІСНЯ ПІСНЯ</div>
+						<a href="#" class="StoronnimV-music-section__listen">Слухати</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-music-section__col">
+						<div class="StoronnimV-music-section__title">АЛЬБОМ АЛЬБОМ</div>
+						<div class="StoronnimV-music-section__date">ПІСНЯ ПІСНЯ</div>
+						<a href="#" class="StoronnimV-music-section__listen">Слухати</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-music-section__col">
+						<div class="StoronnimV-music-section__title">АЛЬБОМ АЛЬБОМ</div>
+						<div class="StoronnimV-music-section__date">ПІСНЯ ПІСНЯ</div>
+						<a href="#" class="StoronnimV-music-section__listen">Слухати</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-music-section__col">
+						<div class="StoronnimV-music-section__title">АЛЬБОМ АЛЬБОМ</div>
+						<div class="StoronnimV-music-section__date">ПІСНЯ ПІСНЯ</div>
+						<a href="#" class="StoronnimV-music-section__listen">Слухати</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-music-section__col">
+						<div class="StoronnimV-music-section__title">АЛЬБОМ АЛЬБОМ</div>
+						<div class="StoronnimV-music-section__date">ПІСНЯ ПІСНЯ</div>
+						<a href="#" class="StoronnimV-music-section__listen">Слухати</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-music-section__col">
+						<div class="StoronnimV-music-section__title">АЛЬБОМ АЛЬБОМ</div>
+						<div class="StoronnimV-music-section__date">ПІСНЯ ПІСНЯ</div>
+						<a href="#" class="StoronnimV-music-section__listen">Слухати</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="section StoronnimV-video-section">
+			<div class="container">
+				<div class="row StoronnimV-video-section__row">
+					<div class="col-lg-12 StoronnimV-video-section__col-head">
+						<div class="StoronnimV-video-section__heading">ВІДЕО</div>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+					<div class="col-md-6 col-lg-4 StoronnimV-video-section__col">
+						<div class="StoronnimV-video-section__title">ВІДЕО ГУРТУ ВІДЕО</div>
+						<a href="#" class="StoronnimV-video-section__watch">Дивитися</a>
+					</div>
+				</div>
 			</div>
 		</div>
-
-
-	</section>
-</div>  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-<!-- <div id="fullpage">
-	<section class="main-page section">
-		
-		<div id="canvas"></div>
-		<div id="fullwidth-image">
-			<img data-sampler="displacedImage" src="img/star-wars-wallpaper-hd-1080p.jpg" />
+		<div class="section StoronnimV-gallery-section">
+			<div class="slide" data-anchor="slide1">
+				<div class="container">
+					<div class="row StoronnimV-gallery-section__row">
+						<div class="col-12 StoronnimV-gallery-section__head">ГАЛЕРЕЯ</div>
+						<a href="#" class="col-12 StoronnimV-gallery-section__img-wrapper">СТОРОННІМ В</a>
+					</div>
+				</div>
+			</div>
+			<div class="slide" data-anchor="slide2"><div class="container">
+				<div class="row StoronnimV-gallery-section__row">
+					<div class="col-12 StoronnimV-gallery-section__head">ГАЛЕРЕЯ</div>
+					<a href="#" class="col-12 StoronnimV-gallery-section__img-wrapper">СТОРОННІМ В</a>
+				</div>
+			</div></div>
+			<div class="slide" data-anchor="slide3"><div class="container">
+				<div class="row StoronnimV-gallery-section__row">
+					<div class="col-12 StoronnimV-gallery-section__head">ГАЛЕРЕЯ</div>
+					<a href="#" class="col-12 StoronnimV-gallery-section__img-wrapper">СТОРОННІМ В</a>
+				</div>
+			</div></div>
+			<div class="slide" data-anchor="slide4"><div class="container">
+				<div class="row StoronnimV-gallery-section__row">
+					<div class="col-12 StoronnimV-gallery-section__head">ГАЛЕРЕЯ</div>
+					<a href="#" class="col-12 StoronnimV-gallery-section__img-wrapper">СТОРОННІМ В</a>
+				</div>
+			</div></div>
 		</div>
-
-	</section>
-	<div class="section">
-		section 2
+		<div class="section StoronnimV-contact-section">
+			<footer class="StoronnimV-contact-section__footer">
+				<div class="container-fluid StoronnimV-contact-section__container-fluid">
+					<span class="StoronnimV-contact-section__copyright">© 2019 Company. All right reserved.</span>
+					<span class="StoronnimV-contact-section__name">Стороннім В</span>
+					<ul class="StoronnimV-contact-section__list">
+						<li class="StoronnimV-contact-section__list-item"><a target="_blank" href="https://www.facebook.com/%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D1%96%D0%BC-%D0%92-377358619512485/"><img src="img/icons/facebook.svg" alt=""></a></li>
+						<li class="StoronnimV-contact-section__list-item"><a target="_blank" href="https://www.youtube.com/"><img src="img/icons/youtube.svg" alt=""></a></li>
+						<li class="StoronnimV-contact-section__list-item"><a target="_blank" href="#"><img src="img/icons/social/telegram.svg" alt=""></a></li>
+						<li class="StoronnimV-contact-section__list-item"><a target="_blank" href="#"><img src="img/icons/twitter.svg" alt=""></a></li> 
+					</ul>
+				</div>
+			</footer>
+			<div id="map"></div>
+			<div class="container StoronnimV-contact-section__container">
+				<div class="row StoronnimV-contact-section__row">
+					<div class="col-md-12 col-lg-8 StoronnimV-contact-section__col">
+						<p class="StoronnimV-contact-section__head">Зв'яжіться з нами</p>
+						<form action="#" class="StoronnimV-contact-section__form">
+							<input type="email" class="StoronnimV-contact-section__email" placeholder="Ваша пошта ...">
+							<textarea class="StoronnimV-contact-section__textarea" placeholder="Повідомлення ..."></textarea>
+							<input type="submit" class="StoronnimV-contact-section__btn" value="Відправити">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="section">
-		section 3
-	</div>
-</div> -->
 
 
 
@@ -145,43 +408,48 @@
 		</div>
 	</header>
 </section> -->
+ 
 	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="js/fullpage.js"></script>
-	<script id="mouse-displacement-vs" type="x-shader/x-vertex">
-		#ifdef GL_ES
-		precision mediump float;
-		#endif
+<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="js/preloader.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.vide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/fullpage.js"></script>
+<script id="mouse-displacement-vs" type="x-shader/x-vertex">
+	#ifdef GL_ES
+	precision mediump float;
+	#endif
 
-		// default mandatory variables
-		attribute vec3 aVertexPosition;
-		attribute vec2 aTextureCoord;
+	// default mandatory variables
+	attribute vec3 aVertexPosition;
+	attribute vec2 aTextureCoord;
 
-		uniform mat4 uMVMatrix;
-		uniform mat4 uPMatrix;
+	uniform mat4 uMVMatrix;
+	uniform mat4 uPMatrix;
 
-		// custom variables
-		varying vec3 vVertexPosition;
-		varying vec2 vTextureCoord;
+	// custom variables
+	varying vec3 vVertexPosition;
+	varying vec2 vTextureCoord;
 
-		varying vec2 vDistortionEffect;
+	varying vec2 vDistortionEffect;
 
-		// custom uniforms
-		uniform vec2 uMousePosition;
+	// custom uniforms
+	uniform vec2 uMousePosition;
 
-		void main() {
-		vec3 vertexPosition = aVertexPosition;
+	void main() {
+	vec3 vertexPosition = aVertexPosition;
 
-		gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
+	gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
 
-		// varyings
-		vTextureCoord = aTextureCoord;
-		vVertexPosition = vertexPosition;
+	// varyings
+	vTextureCoord = aTextureCoord;
+	vVertexPosition = vertexPosition;
 
-		vDistortionEffect = uMousePosition - vec2(vertexPosition.x, vertexPosition.y);
-	}
+	vDistortionEffect = uMousePosition - vec2(vertexPosition.x, vertexPosition.y);
+}
 </script>
 <script id="mouse-displacement-fs" type="x-shader/x-fragment">
 	#ifdef GL_ES
@@ -223,191 +491,14 @@
 }
 </script>
 <script src='https://cdn.rawgit.com/martinlaxenaire/curtainsjs/master/build/curtains.min.js'></script>
-<script src="js/jquery-2.1.4.min.js"></script>
- 
- <script>
- 'use strict'; 
-
-$(document).ready( function() {
- 
-	
-
-    var width = 100,
-        perfData = window.performance.timing, 
-        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-        time = ((EstimatedTime/1000)%50) * 100
-
-
-    // Percentage Increment Animation
-    var PercentageID = $(".percentage"),
-            start = 0,
-            end = 100,
-            durataion = time;
-            animateValue(PercentageID, start, end, durataion);
-
-    function animateValue(id, start, end, duration) {
-
-        var range = end - start,
-          current = start,
-          increment = end > start? 1 : -1,
-          stepTime = Math.abs(Math.floor(duration / range)),
-          obj = $(id);
-
-
-        var timer = setInterval(function() {
-            current += increment;
-            $(obj).text(current);
-          //obj.innerHTML = current;
-            if (current == end) {
-                clearInterval(timer);
-            }
-        }, stepTime);
-    }
-    
-
-    
-	setTimeout(function(){
-        $('.preloader').fadeOut();
-        
-        $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
-            $(this).removeClass("visible closing opening").dequeue();
-        });
-        
-	}, time);
-		
-    
-
-
-   // FADE OUT EFFECT WHEN CLICK A LINK
-    $(document).on("click", "a:not(.lightbox)", function () {
-        var newUrl = $(this).attr("href");
-        if (!newUrl || newUrl[0] === "#") {
-            location.hash = newUrl;
-            return;
-        }
-        $("html").fadeOut(function () {
-            location = newUrl;
-        });
-        return false;
-    });
-    
-
-    var paget = $(".page-title .title").text();
-
-    $( ".page-title").append("<span></span>");
-    $( ".page-title span").append(paget);
-
-
-    
-    //posts page hover 
-    $('.blog-post .blog-link').hover(function(){
-        $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
-        $(this).parent('.blog-post').toggleClass('mousef');
-    });
- 
-});  
-
-
-
-
-$(window).load( function() {
- 
-
-function smokeeffect () { 
-    var modalTrigger = $('.nav-icon'),
-        transitionLayer = $('.cd-transition-layer'),
-        transitionBackground = transitionLayer.children(),
-        modalWindow = $('.full-menu');
-
-    var frameProportion = 1.78, //png frame aspect ratio
-        frames = 25, //number of png frames
-        resize = false;
-
-    //set transitionBackground dimentions
-    setLayerDimensions();
-    $(window).on('resize', function(){
-        if( !resize ) {
-            resize = true;
-            (!window.requestAnimationFrame) ? setTimeout(setLayerDimensions, 300) : window.requestAnimationFrame(setLayerDimensions);
-        }
-    });
-
-    //open modal window
-    modalTrigger.on('click', function(event){   
-        event.preventDefault();
-        transitionLayer.addClass('visible opening');
-        var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
-        setTimeout(function(){
-            modalWindow.addClass('visible');
-        }, delay);
-    });
-
-    //close modal window
-    modalWindow.on('click', '.modal-close', function(event){
-        event.preventDefault();
-        transitionLayer.addClass('closing');
-        modalWindow.removeClass('visible');
-        transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
-            transitionLayer.removeClass('closing opening visible');
-            transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
-        });
-    });
-
-    function setLayerDimensions() {
-        var windowWidth = $(window).width(),
-            windowHeight = $(window).height(),
-            layerHeight, layerWidth;
-
-        if( windowWidth/windowHeight > frameProportion ) {
-            layerWidth = windowWidth;
-            layerHeight = layerWidth/frameProportion;
-        } else {
-            layerHeight = windowHeight*1.2;
-            layerWidth = layerHeight*frameProportion;
-        }
-
-        transitionBackground.css({
-            'width': layerWidth*frames+'px',
-            'height': layerHeight+'px',
-        });
-
-        resize = false;
-    }
-
-}
-smokeeffect()
-
- 
-    
-/*--------------------------------------------------
- Hero Section Height
----------------------------------------------------*/	
-     function homeh() {
-        var hometext = $('.main')
-
-        hometext.css({
-            "height": $(window).height() + "px"
-        });
-    }
-    homeh();
-    $(window).resize(homeh);
-
-
-    $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
-
-    $('.nav-icon').on("click", function(){
-            $(this).toggleClass('modal-close');
-    });
- 
- 
-     
-}); // document load end 
-
-
-
-
-  
-</script>
+<script src="js/header-hover-effect.js"></script>
+<script src="js/menu-main.js"></script>
+<script src="js/mouse-effect-on-img.js"></script>
+<!-- <script src="js/jq-padding-hack.js"></script> -->
 <script src="js/script.js"></script>
+<script src="js/google-map.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUJrqcHyekFRTYOpij3N37tVc2QPEG1Zg&callback=initMap">
+</script>
 </body>
 </html>
