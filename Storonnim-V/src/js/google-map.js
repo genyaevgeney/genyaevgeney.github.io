@@ -233,7 +233,7 @@ function initMap() {
     ]
   }
 ]});
-  let image = '../img/icons/marker.svg';
+  let image = './img/icons/marker.svg';
   let marker = new google.maps.Marker({
     position: krem,
     map: map,
