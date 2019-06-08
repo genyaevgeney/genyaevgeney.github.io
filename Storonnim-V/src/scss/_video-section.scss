@@ -6,6 +6,9 @@
 		font-size: 38px;
 		line-height: 1;
 		margin-bottom: 8px;
+		@media all and (max-width: 1200px) {
+			text-align:center;
+		}
 
 	}
 	&__watch {

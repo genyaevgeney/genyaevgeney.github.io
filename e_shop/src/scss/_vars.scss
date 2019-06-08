@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('../fonts/BebasNeue/bebas-neue.css');
+
+
+$font-main: 'Open Sans', sans-serif;
+$font-titles: 'Bebas Neue', sans-serif;
+$font-logo: 'Lobster', cursive;
+
+$corp-aqua: #4ccfc1;
+$corp-dark-aqua: darken($corp-aqua, 10%);
+$text-grey: #afafaf;
+$border-grey: #e4e4e4;
+$active-green: #3cc395;
+$slider-bg: #3ac8b8;
+$bottom-menu: #3cc3b5;
+$footer-bg: #2da89b;
+$menu-bg: #4ccfc1;
+$white: #fff;
+$black: #000;
+
+$img-path: '../img';

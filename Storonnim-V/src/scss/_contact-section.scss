@@ -215,6 +215,10 @@
 			opacity: .7;
 		}
 
+		& > a {
+			display: block;
+		}
+
 		&:not(:last-child) {
 			margin-right: 52px;
 			@media all and(max-width: 425px) {
