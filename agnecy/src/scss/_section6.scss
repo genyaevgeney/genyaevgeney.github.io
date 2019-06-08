@@ -1,0 +1,139 @@
+.agnecy-section6 {
+	// display: none;
+	.container {
+		min-height: 100vh;
+		// padding: 40px 0;
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+
+	&__title {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 700;
+		font-size: 35px;
+		color:black;
+		display: block;
+		margin-bottom: 30px;
+		@media all and (max-width: 992px) {
+			text-align: center;
+		}
+	}
+
+	&__input-name,
+	&__input-email,
+	&__textarea {
+		font-family: 'Open Sans',sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		color:black;
+		border:none;
+		width: 100%;
+		padding: 16px;
+		background-color: #e5e5e5;
+		border-radius: 5px;
+		&::placeholder {
+			color:black;
+		}
+	}
+
+	&__textarea {
+		min-height: 230px;
+	}
+
+	&__submit {
+		font-family: 'Open Sans',sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		color:white;
+		border:none;
+		width: 100%;
+		padding: 20px;
+		background-color: #ff2d2d;
+		border-radius: 5px;
+		transition: opacity .6s ease;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+	&__text {
+
+		font-family:"Open Sans",sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		color:#7c7c7c;
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		@media all and (max-width: 1200px) {
+			align-items: center;
+		}
+
+		&::after {
+			content: '';
+			width: 130px;
+			height: 2px;
+			display: block;
+			background-color: #ff2d2d;
+			margin-top:25px;
+		}
+	}
+
+	&__col1 {
+		display: flex;
+		// display: none;
+		align-items: center;
+		background-color: #2d2d2d;
+		@media all and (max-width: 992px) {
+			border-radius: 4px;
+		}
+
+		& > .row {
+			justify-content: center;
+		}
+	}
+
+	&__info {
+		font-family: 'Open Sans',sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		color:darken(white,10%);
+		text-transform: uppercase;
+	}
+
+	&__row1 {
+		@media all and(max-width:992px ) {
+			padding: 30px 0;
+		}
+
+		& > div {
+			text-align: center;
+		}
+	}
+
+	&__adress,
+	&__email,
+	&__phone {
+		font-family: 'Open Sans',sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		color:darken(white,10%);;
+	}
+
+	&__col2 {
+		@media all and (max-width: 992px){
+			margin-bottom: 40px;
+		}
+	}
+
+	&__form {
+		width: 100%;
+		.row {
+			& > div:first-child {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

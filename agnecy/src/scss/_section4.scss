@@ -1,0 +1,212 @@
+.agnecy-section4 {
+	.container {
+		min-height: 100vh;
+		padding-top: 85px;
+		padding-bottom: 30px;
+
+		&>div:first-child {
+
+			&>div:first-child {
+				@media all and (max-width: 1200px) {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+			@media all and (max-width: 1200px) {
+				justify-content: center;
+			}
+		}
+	}
+
+	&__text {
+
+		font-family:"Open Sans",sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		color:#7c7c7c;
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		@media all and (max-width: 1200px) {
+			align-items: center;
+		}
+
+		&::after {
+			content: '';
+			width: 130px;
+			height: 2px;
+			display: block;
+			background-color: #ff2d2d;
+			margin-top:25px;
+		}
+	}
+
+	&__heading {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+	}
+
+	&__lorem {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		color:#7c7c7c;
+		display: flex;
+		flex-direction: column;
+		@media all and (max-width: 700px) {
+			text-align: justify;
+		}
+	}
+
+	&__row1 {
+		flex-direction: column;
+		& > div:first-child {
+			@media all and (max-width: 1200px) {
+				display: flex;
+				justify-content: center;
+			}
+		}
+		@include padding-hack() {
+			display: block;
+		}
+
+		@media all and (max-width: 1200px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__row2 {
+		& > div:not(:last-child) {
+			@media all and (max-width:576px) {
+				margin-bottom: 35px;
+			}
+		}
+		& > div:nth-child(1) {
+			.padding-hack {
+				&:hover::before {
+					content:'SOKINA JUE';
+					color:white;
+					font-family: 'Open Sans',sans-serif;
+					font-size: 18px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+
+		& > div:nth-child(2) {
+			.padding-hack {
+				&:hover::before {
+					content:'FILL MONRIK';
+					color:white;
+					font-family: 'Open Sans',sans-serif;
+					font-size: 18px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+
+		& > div:nth-child(3) {
+			.padding-hack {
+				&:hover::before {
+					content:'KESI JOHN';
+					color:white;
+					font-family: 'Open Sans',sans-serif;
+					font-size: 18px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+
+		& > div:nth-child(4) {
+			.padding-hack {
+				&:hover::before {
+					content:'LILA STICH';
+					color:white;
+					font-family: 'Open Sans',sans-serif;
+					font-size: 18px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 600;
+		font-style: italic;
+		font-size: 17px;
+		line-height: 28px;
+		color:black;
+		transition: color .6s ease;
+
+		&:hover {
+			color:red;
+		}
+	}
+
+	&__row3 {
+		@media all and (max-width: 1200px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__col1 {
+
+		@include padding-hack(148%) {
+			display: block;
+			&:hover::before {
+				content:'SAM NILSON';
+				color:white;
+				font-family: 'Open Sans',sans-serif;
+				font-size: 18px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		@media all and (max-width: 1200px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	.padding-hack {
+		.img {
+			transition: opacity .6s ease;
+		}
+	}
+	.padding-hack:hover {
+		&::before {
+			width:100%;
+			height: 35px;
+			background-color: rgba(black,.7);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 5;
+		}
+		.img {
+			opacity: .7;
+		}
+	}
+}

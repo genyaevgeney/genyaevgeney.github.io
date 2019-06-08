@@ -1,0 +1,72 @@
+.agnecy-footer {
+	background-color: #313030;
+	&__copyright {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		color:#b8b8b8;
+		
+		@media all and (max-width: 408px) {
+			text-align: center;
+		}
+	}
+
+	&__row {
+		justify-content: space-between;
+		align-items: center;
+		padding: 38px 0;
+
+		& > div:nth-child(1) {
+			@media all and (max-width: 768px) {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 45px;
+			}
+		}
+	}
+
+	&__link {
+		$size:35px;
+		height: $size;
+		width: $size;
+		display: block;
+		transition: opacity .6s ease;
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		@media all and (max-width: 768px) {
+			justify-content: space-around;
+		}
+	}
+
+	&__item:nth-child(1) {
+		& > * {
+			background: url('../img/social1.svg');
+		}
+	}
+
+	&__item:nth-child(2) {
+		& > * {
+			background: url('../img/social2.svg');
+		}
+	}
+
+	&__item:nth-child(3) {
+		& > * {
+			background: url('../img/social3.svg');
+		}
+	}
+
+	&__item:nth-child(4) {
+		& > * {
+			background: url('../img/social4.svg');
+		}
+	}
+}

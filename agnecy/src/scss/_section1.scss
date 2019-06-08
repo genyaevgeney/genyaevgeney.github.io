@@ -1,0 +1,124 @@
+
+
+.agnecy-section1 {
+	background-color: #f6f2f2;
+	&__container {
+		min-height: 100vh;
+		padding-top: 25px;
+		flex-direction: column;
+	}
+	&__list {
+		background-color: #313030;
+		justify-content: center;
+	}
+	&__link {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		color:#e0e0e0;
+		padding: 34px 0;
+		display: block;
+		text-align: center;
+		transition: background-color .6s ease;
+
+		&:hover {
+			background-color: #ff3f40;
+			color:#e0e0e0;
+		}
+	}
+
+	&__header {
+		margin-bottom: 95px;
+	}
+
+	&__heading {
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 800;
+		font-size: 60px;
+		line-height: 72px;
+		color:black;
+		margin-bottom: 0;
+		@media all and (max-width: 1200px) {
+			font-size: 50px;
+		}
+		@media all and (max-width: 992px) {
+			text-align: center;
+		}
+		@media all and (max-width: 484px) {
+			font-size: 30px;
+			line-height: 42px;
+		}
+		
+	}
+
+	&__content {
+		margin-bottom: 50px;
+	}
+
+	&__main-row {
+		@media all and (max-width: 992px) {
+			justify-content: center;
+		}
+	}
+
+	&__text {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		color:black;
+		margin-bottom: 0;
+		@media all and (max-width: 992px) {
+			text-align: justify;
+		}
+	}
+
+	&__link-main {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		padding:14px 0;
+		text-align: center;
+		color:white;
+		background-color: #ff2d2d;
+		display: block;
+		border-radius: 3px;
+		transition: opacity .6s ease;
+
+		&:hover {
+			color:white;
+			opacity: .7;
+		}
+		// box-sizing: border-box;
+	}
+
+	@include padding-hack(72%) {
+		display: block;
+		z-index: 1;
+
+		.img {
+			transition: opacity .6s ease;
+		}
+		&:hover {
+			.img {
+				opacity: .7;
+			}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			$size:74px;
+			height: $size;
+			width: $size;
+			background: url('../img/1sec.png') no-repeat center;
+			z-index: 2;
+			top: 50%;
+			right: 50%;
+			transform: translateX(50%) translateY(-50%);
+		}
+	}
+}

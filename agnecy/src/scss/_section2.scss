@@ -1,0 +1,123 @@
+.agnecy-section2 {
+	.container {
+		min-height: 100vh;
+		padding-top: 90px;
+		border-bottom: 2px solid #ececec;
+	}
+	&__title {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 700;
+		font-size: 35px;
+		line-height: 55px;
+		text-transform:uppercase;
+		color:black;
+		margin-bottom: 0;
+		@media all and (max-width: 992px) {
+			font-size: 30px;
+			text-align: center;
+		}
+	}
+
+	&__row {
+		@media all and (max-width: 992px) {
+			justify-content: center;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__link-main {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		padding:14px 0;
+		text-align: center;
+		color:#ff2d2d;
+		border:2px solid #ff2d2d;
+		display: block;
+		border-radius: 3px;
+		transition: opacity .6s ease;
+
+		&:hover {
+			color:#ff2d2d;
+			opacity: .5;
+		}
+	}
+
+	&__subtitle {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		// letter-spacing: 10px;
+		color:black;
+		margin-bottom: 18px;
+	}
+
+	&__text {
+		font-family:"Open Sans",sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		color:#cfcfcf;
+		margin-bottom: 0;
+		@media all and (max-width: 992px) {
+			text-align: justify;
+		}
+	}
+
+	&__col {
+		.agnecy-section2__icon {
+			display: block;
+			$size:45px;
+			width: $size;
+			height: $size;
+			margin-bottom: 20px;
+		}
+		&:nth-child(1) {
+			@media all and (min-width: 576px) {
+				margin-bottom: 40px;
+			}
+		}
+
+		&:nth-child(2) {
+			@media all and (min-width: 576px) {
+				margin-bottom: 40px;
+			}
+		}
+
+		&:not(:last-child) {
+			@media all and (max-width: 576px) {
+				margin-bottom: 40px;
+			}
+		}
+		
+		@media all and (max-width: 992px) {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__col:nth-child(1) {
+		.agnecy-section2__icon {
+			background:url('../img/icon1.png') no-repeat center;
+		}
+	}
+
+	&__col:nth-child(2) {
+		.agnecy-section2__icon {
+			background:url('../img/icon2.png') no-repeat center;
+		}
+	}
+
+	&__col:nth-child(3) {
+		.agnecy-section2__icon {
+			background:url('../img/icon3.png') no-repeat center;
+		}
+	}
+
+	&__col:nth-child(4) {
+		.agnecy-section2__icon {
+			background:url('../img/icon4.png') no-repeat center;
+		}
+	}
+}
