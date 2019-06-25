@@ -2,9 +2,11 @@
 	background: url('../img/video/background.jpg') no-repeat center;
 	background-size: cover;
 
-	&__website-list {
+	.container {
 		height: 100vh;
-		padding: 64px 0 0 0;
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
 	}
 
 	&__link {
@@ -19,6 +21,16 @@
 	&__website-list {
 		.row:nth-child(1) {
 			margin-bottom: 30px;
+		}
+
+		.row {
+			@media all and (max-width:992px) {
+				justify-content: center;
+
+				.portfolio-section__link-wrap:not(:last-child){
+					margin-bottom: 30px;
+				}
+			}
 		}
 	}
 
@@ -174,7 +186,7 @@
 						background:url('../img/10.jpg') no-repeat center;
 						background-size:cover;
 						&::before {
-							content: "Slick slider our team";
+							content: "Slick slider";
 						}
 					}
 				}
@@ -366,7 +378,7 @@
 						background:url('../img/22.jpg') no-repeat center;
 						background-size:cover;
 						&::before {
-							content: "Checkers (float/position)";
+							content: "Checkers";
 						}
 					}
 				}
@@ -515,7 +527,24 @@
 			justify-content: center;
 			opacity: 0;
 			transition: opacity .4s ease;
+
+			@media all and (max-width:992px) {
+				top: 0;
+				bottom: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 1;
+				font-size: 35px;
+			}
 			
+		}
+
+		@media all and (max-width:992px) {
+			background:none !important;
+			background-color: $dark-blue !important;
+			height: 60px;
+			border-radius: 4px;
 		}
 	}
 
@@ -527,8 +556,8 @@
 		}
 
 		.portfolio-section__link-wrap:hover {
-				opacity: 1;
-			}
+			opacity: 1;
+		}
 	}
 
 	&__link-wrap {

@@ -69,8 +69,8 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-     @media all and (max-width: 530px) {
-        top: 80%;
+     @media all and (max-width: 706px) {
+        top: 6%;
     }
 }
 .fp-controlArrow.fp-prev {
@@ -78,16 +78,16 @@ html.fp-enabled,
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent rgba(#FFFF01,.7) transparent transparent;
-    @media all and (max-width: 530px) {
-        left: 35%;
+    @media all and (max-width: 706px) {
+        left: 7%;
     }
 }
 .fp-controlArrow.fp-next {
     right: 80px;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent rgba(#FFFF01,.7);
-    @media all and (max-width: 530px) {
-       right: 35%;
+    @media all and (max-width: 706px) {
+       right: 7%;
     }
 }
 .fp-scrollable {
