@@ -1,0 +1,18 @@
+#fp-nav ul li a span {
+	background-color: rgba($main,.9) !important;
+}
+
+.fp-slidesNav ul li a span {
+	background-color: rgba($yellow,.9) !important;
+}
+
+.fp-slidesNav ul {
+	display: flex;
+	justify-content: center;
+}
+
+// .fp-slidesContainer {
+// 	background: url('img/video/background.jpg') no-repeat center;
+// 	background-size: cover;
+// 	z-index: 1000;
+// }

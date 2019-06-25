@@ -1,5 +1,0 @@
-package jdbs.lb.dao;
-
-public interface Dao {
-
-}

@@ -1,5 +1,0 @@
-package jdbs.lb.dao;
-
-public class PhoneDao implements Dao<T, Id> {
-
-}

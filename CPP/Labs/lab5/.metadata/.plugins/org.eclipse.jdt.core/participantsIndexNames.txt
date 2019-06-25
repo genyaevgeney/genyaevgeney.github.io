@@ -1,5 +1,0 @@
-INDEX VERSION 1.131
-C:\University\Java\Labs\lab5\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\728927616.index
-\hibernate.repository\src\main\resources
-C:\University\Java\Labs\lab5\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1930224608.index
-\hibernate.demo\src\main\resources

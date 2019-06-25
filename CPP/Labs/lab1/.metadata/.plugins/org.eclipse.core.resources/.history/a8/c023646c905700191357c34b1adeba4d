@@ -1,5 +1,0 @@
-package jdbc.lb.dao;
-
-public @interface PhoneDao {
-
-}

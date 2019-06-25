@@ -1,0 +1,543 @@
+.portfolio-section {
+	background: url('../img/video/background.jpg') no-repeat center;
+	background-size: cover;
+
+	&__website-list {
+		height: 100vh;
+		padding: 64px 0 0 0;
+	}
+
+	&__link {
+		perspective:700px;
+		transform-style: preserve-3d;
+		display: block;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&__website-list {
+		.row:nth-child(1) {
+			margin-bottom: 30px;
+		}
+	}
+
+	.slide:nth-child(1) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/1.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "СТОРОННІМ В.";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(1) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						background:url('../img/2.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Agnecy";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(1) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						background:url('../img/3.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Piroll";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(1) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/4.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Aditii shop";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(1) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						background:url('../img/5.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Cahee";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(1) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						background:url('../img/6.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Akad";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(2) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/7.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Google map api";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(2) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						background:url('../img/8.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Ajax js";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(2) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						background:url('../img/9.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Tabs js";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(2) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/10.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Slick slider our team";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(2) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						background:url('../img/11.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Slider js";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(2) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						background:url('../img/12.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Blog grid";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(3) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/13.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Cup plans";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(3) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						background:url('../img/14.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Pricing";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(3) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						background:url('../img/15.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Nike card";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(3) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/16.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Forms";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(3) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						background:url('../img/17.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Foliac";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(3) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						background:url('../img/18.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Travel More";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(4) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/19.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Design Lab";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(4) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						background:url('../img/20.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Productman";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(4) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						background:url('../img/21.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Huge Search";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(4) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/22.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Checkers (float/position)";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(4) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						background:url('../img/23.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Weather Forecast";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(4) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						background:url('../img/24.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Shopping list";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(5) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						background:url('../img/25.jpg') no-repeat center;
+						background-size:cover;
+						&::before {
+							content: "Css Animation";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(5) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						&::before {
+							content: "Coming soon...";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(5) {
+		.portfolio-section__website-list{
+			.row:nth-child(1) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						&::before {
+							content: "Coming soon...";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(5) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(1) {
+					.portfolio-section__img {
+						&::before {
+							content: "Coming soon...";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(5) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(2) {
+					.portfolio-section__img {
+						&::before {
+							content: "Coming soon...";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide:nth-child(5) {
+		.portfolio-section__website-list{
+			.row:nth-child(2) {
+				.portfolio-section__link-wrap:nth-child(3) {
+					.portfolio-section__img {
+						&::before {
+							content: "Coming soon...";
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	&__img {
+		background-color: $dark-blue;
+		width: 100%;
+		height: 300px;
+		transition: transform 0.2s;
+		position:relative;
+		&:hover::before {
+			opacity: 1;
+		}
+		&::before {
+			font-family: "Marske", sans-serif;
+			font-weight: 600;
+			font-size: 22px;
+			color:$main;
+			position:absolute;
+			top: -10%;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: center;
+			opacity: 0;
+			transition: opacity .4s ease;
+			
+		}
+	}
+
+	&__website-list {
+		&:hover {
+			.portfolio-section__link-wrap {
+				opacity: .5;
+			}
+		}
+
+		.portfolio-section__link-wrap:hover {
+				opacity: 1;
+			}
+	}
+
+	&__link-wrap {
+		transition: opacity .6s ease;
+	}
+
+	// &__name {
+	// 	position:absolute;
+	// 	top: 50%;
+	// 	left: 50%;
+	// }
+}
