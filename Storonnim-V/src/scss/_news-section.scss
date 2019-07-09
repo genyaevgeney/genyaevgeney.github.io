@@ -37,6 +37,10 @@
 		}
 	}
 
+	&__announcement {
+		justify-content: center;
+	}
+
 	&__news:nth-child(1),
 	&__news:nth-child(2),
 	&__news:nth-child(3),
@@ -61,9 +65,6 @@
 	}
 
 	&__news:nth-child(2) {
-		@media all and (max-width: 992px) {
-			display: none;
-		}
 
 		.StoronnimV-news-section__news-content {
 			background-image: url('../img/news2.jpg');
@@ -71,6 +72,9 @@
 	}
 
 	&__news:nth-child(3) {
+		@media all and (max-width: 992px) {
+			display: none;
+		}
 
 		.StoronnimV-news-section__news-content {
 			background-image: url('../img/news3.jpg');
