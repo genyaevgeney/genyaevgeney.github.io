@@ -148,8 +148,8 @@
 			background:linear-gradient(transparent, rgba(230, 126, 34,0.8) 56%);
 			z-index: 0;
 			// opacity: .5;
-			@media all and (max-width: 1024px) {
-				display: none;
+			@media all and (max-width: 404px) {
+				top: -40%;
 			}
 		}
 
